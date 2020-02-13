@@ -1,6 +1,7 @@
 var HOME = (function () {
+    var navbar = '';
 
-    function generate_main_navbar() {
+    function generate_navbar() {
         var ret = "<ul class=\"navbar-nav text-left ml-auto\" id=\"nav_bar\">" +
         "<li class=\"nav-item active\">" +
         "<a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>" +
@@ -22,11 +23,17 @@ var HOME = (function () {
         return ret;
     }
 
+    function get_navbar() {
+        return navbar;
+    }
+
     function init() {
+        navbar = generate_navbar();
     }
 
 	return {
         init: init,
-        create_navbar: generate_main_navbar
+        get_navbar: get_navbar
     };
+
 }());

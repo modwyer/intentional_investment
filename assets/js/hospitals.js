@@ -1,10 +1,7 @@
 var HOSPITALS = (function () {
+    var navbar = '';
 
-    function blah() {
-        alert("blah");
-    }
-
-    function generate_hospital_navbar() {
+    function generate_navbar() {
         var ret = "<ul class=\"navbar-nav text-left ml-auto\" id=\"nav_bar\">" +
         "<li class=\"nav-item active\">" +
         "<a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>" +
@@ -26,12 +23,17 @@ var HOSPITALS = (function () {
         return ret;
     }
 
+    function get_navbar() {
+        return navbar;
+    }
+
     function init() {
+        navbar = generate_navbar();
     }
 
     return {
         init: init,
-        create_navbar: generate_hospital_navbar
+        get_navbar: get_navbar
     };
 
 }());

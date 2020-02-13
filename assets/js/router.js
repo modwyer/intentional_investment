@@ -1,20 +1,16 @@
 var ROUTER = (function () {
     var m_navbar_content = "nav_bar";
     var m_pageName = "main";
-    
-    function init() {
-        alert("router init hit");
-    }
 
     $(window).on('hashchange', function(){
         alert("window on hash change: window.location.hash: " + window.location.hash);
         // On every hash change the render function is called with the new hash.
         // This is how the navigation of our app happens.
-        render(decodeURI(window.location.hash));
+        route(decodeURI(window.location.hash));
     });
 
-    function render(url) {
-        alert("render url: " + url);
+    function route(url) {
+        alert("route url: " + url);
         // This function decides what type of page to show 
         // depending on the current url hash value.
         // Get the keyword from the url.
@@ -78,29 +74,29 @@ var ROUTER = (function () {
         // }
 
         create_navbar();
-
     }
-
-
 
     function create_navbar() {
         //alert("create_navbar hit: m_pageName: " + m_pageName);
         var nav_content = "";
         switch (m_pageName) {
             case 'medSchools':
-                nav_content = MEDSCHOOLS.create_navbar();
+                nav_content = MEDSCHOOLS.get_navbar();
                 break;
             case 'hospitals':
-                nav_content = HOSPITALS.create_navbar();
+                nav_content = HOSPITALS.get_navbar();
                 break;
             default:
-                nav_content = HOME.create_navbar();
+                nav_content = HOME.get_navbar();
         }			
         $('#' + m_navbar_content + '').html("");
         $('#' + m_navbar_content + '').html(nav_content);
         //alert("hitend");
     }
 
+    function init() {
+        //alert("router init hit");
+    }
 
     return {
         init: init

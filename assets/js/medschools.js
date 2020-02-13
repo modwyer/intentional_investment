@@ -1,7 +1,7 @@
 var MEDSCHOOLS = (function () {
+    var navbar = '';
 
-    function generate_medschool_navbar() {
-        //alert("medschool create navbar hit");
+    function generate_navbar() {
         var ret = "<ul class=\"navbar-nav text-left ml-auto\" id=\"nav_bar\">" +
         "<li class=\"nav-item active\">" +
         "<a class=\"nav-link\" href=\"#\">Home</a>" +
@@ -22,16 +22,20 @@ var MEDSCHOOLS = (function () {
         "<a class=\"nav-link\" href=\"#\">About</a>" +
         "</li>" +
         "</ul>"; 
-        //alert("hit2 : " + ret);
         return ret;
     }
 
+    function get_navbar() {
+        return navbar;
+    }
+
     function init() {
+        navbar = generate_navbar();
     }
 
     return {
         init: init,
-        create_navbar: generate_medschool_navbar
+        get_navbar: get_navbar
     };
 
 }());
