@@ -252,3 +252,127 @@
 </script>
 </body>
 </html>
+
+
+
+
+
+<div class="card-body">
+  <h5 class="card-title">Card title</h5>
+  <p class="card-text">Quick sample text to create the card title and make up the body of the card's content.</p>
+  <a href="#" class="btn btn-primary">Go somewhere</a>
+</div>
+
+
+
+
+
+
+//   return `<div class="container-fluid">
+  //   <div class="row justify-content-center min-vh-100">
+  //     <div class="col-6 bg-danger">
+  //       <div class="d-flex flex-column h-100">
+  //         <div class="row justify-content-center bg-info">
+  //           <div class="text-black">
+  //             <div style="height:150px">ROW 1 - fixed height</div>
+  //           </div>
+  //         </div>
+  //         <div class="row justify-content-center bg-warning flex-grow-1">
+  //           <div class="text-blue">ROW 2 - grow remaining height</div>
+  //         </div>
+  //       </div>
+  //     </div>
+  //     <div class="col-6 bg-success">This is the bg-gray div</div>
+  //   </div>
+  // </div>`;
+
+  //     return `<div class="row">
+  //     <div class="container">
+  //         <div class="panel panel-default">
+  //             <div class="panel-heading">Panel heading without title</div>
+  //             <div class="panel-body">
+  //                 <img src="#">
+  //                 <p>text Here</p>
+  //             </div>
+  //         </div>
+  //         <div class="panel panel-default">
+  //             <div class="panel-heading">Panel heading without title</div>
+  //             <div class="panel-body">
+  //                 <img src="#">
+  //                 <p>text Here</p>
+  //             </div>
+  //         </div>
+  //         <div class="panel panel-default">
+  //             <div class="panel-heading">Panel heading without title</div>
+  //             <div class="panel-body">
+  //                 <img src="#">
+  //                 <p>text Here</p>
+  //             </div>
+  //         </div>
+  //     </div>
+  // </div>`;
+
+      // return `<div class="col">
+      // <div class="card" style="width: 40rem;">
+      // <div class="card-body">
+      // <h5 class="card-title">Card title</h5>
+      // <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+      // <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      // <a href="#" class="card-link">Card link</a>
+      // <a href="#" class="card-link">Another link</a>
+      // </div>
+      // </div>
+      // </div>
+      // <div class="col">
+      // <div class="card" style="width: 18rem;">
+      // <img src="..." class="card-img-top" alt="...">
+      // <div class="card-body">
+      // <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      // </div>
+      // </div>
+      // </div>`;
+
+
+
+      <div class="container-fluid card-group">
+        <div class="row align-items-center min-vh-100">
+            <div class="card border-light col-md-6" >
+                <div class="card-body">
+                    <h3 class="card-title">` + cards_1.title + `</h3>
+                    <p class="card-text">` + cards_1.text + `</p>
+                </div>
+            </div>
+            <div class="card border-light col-md-6">
+                <div class="card border-light">
+                    <img class="card-img-top" src="` + cards_1.img + `" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    'create_cards_1': function() {
+      return `
+          <div class="container-fluid card-group">
+              <div class="row align-items-center min-vh-100">
+                  <div class="card col-md-5" style="` + cards_1.textStyle + `">
+                      <div class="card-body">
+                          <h2 class="card-title">` + cards_1.title + `</h2>
+                          <p class="card-text">` + cards_1.text + `</p>
+                      </div>
+                  </div>
+                  <div class="card col-md-7" style="` + cards_1.imgStyle + `">
+                      <div class="card border-light">
+                          <img class="card-img-top" src="` + cards_1.img + `" alt="Card image">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          `;
+  },

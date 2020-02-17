@@ -3,11 +3,11 @@ var MEDSCHOOLS = (function () {
 
     function generate_navbar() {
         return `<ul class="navbar-nav text-left ml-auto" id="nav_bar">
-        <li class="nav-item active">
+        <li class="nav-item">
         <a class="nav-link" href="#">Home</a>
         </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Med Schools <span class="sr-only">(current)</span></a>
+        <li class="nav-item active">
+        <a class="nav-link" href="#MedSchools">Med Schools <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
         <a class="nav-link" href="#">Residency Programs</a>

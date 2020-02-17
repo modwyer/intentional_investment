@@ -1,16 +1,17 @@
 var ROUTER = (function () {
-    var m_navbar_content = "nav_bar";
+    var m_navbar_id = "nav_bar";
+    var m_cards_id = "cards";
     var m_pageName = "main";
 
     $(window).on('hashchange', function(){
-        alert("window on hash change: window.location.hash: " + window.location.hash);
+        //alert("window on hash change: window.location.hash: " + window.location.hash);
         // On every hash change the render function is called with the new hash.
         // This is how the navigation of our app happens.
         route(decodeURI(window.location.hash));
     });
 
     function route(url) {
-        alert("route url: " + url);
+        //alert("route url: " + url);
         // This function decides what type of page to show 
         // depending on the current url hash value.
         // Get the keyword from the url.
@@ -26,7 +27,7 @@ var ROUTER = (function () {
             '': function() {
 
                 m_pageName = "home";
-                alert("no hash: on homepage: m_pageName: " + m_pageName);
+                //alert("no hash: on homepage: m_pageName: " + m_pageName);
                 // Clear the filters object, uncheck all checkboxes, show all the products
                 // filters = {};
                 // checkboxes.prop('checked',false);
@@ -37,7 +38,7 @@ var ROUTER = (function () {
             // Single Products page.
             '#MedSchools': function() {
                 m_pageName = "medSchools";
-                alert("med schools page hit: m_pageName: " + m_pageName);
+                //alert("med schools page hit: m_pageName: " + m_pageName);
                 // Get the index of which product we want to show and call the appropriate function.
                 // var index = url.split('#product/')[1].trim();
 
@@ -47,7 +48,7 @@ var ROUTER = (function () {
             // Page with filtered products
             '#Hospitals': function() {
                 m_pageName = "hospitals";
-                alert("hospitals hit: m_pageName: " + m_pageName);
+                //alert("hospitals hit: m_pageName: " + m_pageName);
                 // Grab the string after the '#filter/' keyword. Call the filtering function.
                 // url = url.split('#filter/')[1].trim();
 
@@ -73,12 +74,15 @@ var ROUTER = (function () {
         //     renderErrorPage();
         // }
 
-        create_navbar();
+        //create_navbar();
+        render_page();
     }
 
-    function create_navbar() {
+    function render_page() {
         //alert("create_navbar hit: m_pageName: " + m_pageName);
         var nav_content = "";
+        var cards_content = "";
+
         switch (m_pageName) {
             case 'medSchools':
                 nav_content = MEDSCHOOLS.get_navbar();
@@ -88,9 +92,15 @@ var ROUTER = (function () {
                 break;
             default:
                 nav_content = HOME.get_navbar();
-        }			
-        $('#' + m_navbar_content + '').html("");
-        $('#' + m_navbar_content + '').html(nav_content);
+                cards_content = HOME.get_cards();
+        }
+        // Fill the navbar			
+        $('#' + m_navbar_id + '').html("");
+        $('#' + m_navbar_id + '').html(nav_content);
+        // Fill the cards
+        $('#' + m_cards_id + '').html("");
+        $('#' + m_cards_id + '').html(cards_content);
+
         //alert("hitend");
     }
 
