@@ -1,26 +1,28 @@
 var CAROUSEL = (function () {
-    var m_carousel_id = "carousel";
+    //var m_carousel_id = "banner";
+    var carousel = "";
 
     function generate_carousel() {
         return `<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./assets/images/content/mountains.jpeg" class="d-block w-100" alt="...">
+                    <img src="./assets/images/content/mountains_1680x700_w.jpeg" class="d-block w-100" alt="Mountains">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h1>Financial Independence is Freedom</h1>
+                        <p>Freedom is what we all want. Financial Independence is how you get there. Get to Financial Independence faster by learning a few core principles about money.</p>
+                        <p>Make an Intentional Investment in your future by learning these financial concepts (principles) in an entertaining, interactive and memorable way.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/images/content/jenclass.jpeg" class="d-block w-100" alt="...">
+                    <img src="./assets/images/content/jenclass1680x700.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h5></h5>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -36,9 +38,13 @@ var CAROUSEL = (function () {
     }
 
     function create_carousel() {
-        var carousel_content = generate_carousel();
-        $('#' + m_carousel_id + '').html("");
-        $('#' + m_carousel_id + '').html(carousel_content);
+        carousel = generate_carousel();
+        // $('#' + m_carousel_id + '').html("");
+        // $('#' + m_carousel_id + '').html(carousel_content);
+    }
+
+    function get_carousel() {
+        return carousel;
     }
 
     function init() {
@@ -46,7 +52,8 @@ var CAROUSEL = (function () {
     }
 
 	return {
-        init: init
+        init: init,
+        get_carousel: get_carousel
     };
     
 }());

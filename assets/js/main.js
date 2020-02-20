@@ -8,8 +8,13 @@ var MAIN = (function () {
         ROUTER.init();
     }
 
+    function menu_click() {
+        $(".navbar-collapse").collapse('hide');
+    }
+
 	return {
-        init: init
+        init: init,
+        menu_click: menu_click
     };
 
 }());

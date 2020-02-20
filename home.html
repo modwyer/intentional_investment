@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Niconne&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./assets/css/css.css">
 
+    <link rel="shortcut icon" href="./assets/images//logos/favicon32x32.png">
     <title>Intentional Investment</title>
   </head>
   <body>
@@ -20,91 +21,29 @@
     </div>
 
     <header class="header sticky-top">
-        <nav class="navbar-expand-sm navbar-expand-md navbar-expand-lg navbar navbar-light">
+        <nav class="navbar-expand-sm navbar-expand-md navbar-expand-xl navbar navbar-light">
             <div class="container-fluid nav-container">
                 <div class="navbar-header">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_bar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <!-- <a class="navbar-brand" href="#">Intentional Investment</a> -->
+                  <a href="#" src="./assets/images/logos/ipadlogo72x72.png" class="navbar-brand responsive" style="display:inline" alt="Logo" width="42" height="42"></a>
+                    <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#nav_bar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
-                <div class="collapse navbar-collapse" id="nav_bar">
+                <div class="collapse navbar-collapse" onclick="MAIN.menu_click()" id="nav_bar">
                 </div>
             </div>
         </nav>
         <div class="dropshadow sticky-top"></div>
     </header>
-
-    <!-- <blockquote class="blockquote text-center">
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-    </blockquote> -->
-
- 
-
-    <!-- <div class="container">
-          <div class="row">
-            <div id="cards"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              1 of 2
-            </div>
-            <div class="col">
-              2 of 2
-            </div>
-          </div>
-        </div> -->
-
     
-    <div id="carousel"></div>
+    <div id="banner"></div>
     <main role="main">
-      <div class="container-fluid">
-        <div id="cards"></div>
-      </div>
-
-      
-      <!-- First Container -->
-      <div class="container-fluid container-fluid-padded bg-2 text-center">
-        <h3 class="margin">Who Am I?</h3>
-        <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-        <h3>I'm an adventurer</h3>
-      </div>
-      
-      <!-- Second Container -->
-      <div class="container-fluid container-fluid-padded bg-3 text-center">
-        <h3 class="margin">What Am I?</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <a href="#" class="btn btn-default btn-lg">
-          <span class="glyphicon glyphicon-search"></span> Search
-        </a>
-      </div>
-      
-      <!-- Third Container (Grid) -->
-      <div class="container-fluid container-fluid-padded bg-4 text-center">    
-        <h3 class="margin">Where To Find Me?</h3><br>
-        <div class="row">
-          <div class="col-sm-4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-          </div>
-          <div class="col-sm-4"> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-          </div>
-          <div class="col-sm-4"> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-          </div>
-        </div>
-      </div>
-      
-      <!-- Footer -->
-      <footer class="container-fluid bg-5 text-center">
-        <p>Intentional Investment</p> 
+      <div id="cards"></div>
+      <footer class="container-fluid text-center">
+        <p>Intentional Investment 2020</p> 
       </footer>
-      </main>
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -120,7 +59,8 @@
         $(document).ready(function(){ 
             MAIN.init();
 
-            $(window).trigger('hashchange');
+            $(window).trigger('hashchange');            
+            
         });
     </script>
 </body>
