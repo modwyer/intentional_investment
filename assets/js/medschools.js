@@ -2,7 +2,6 @@ var MEDSCHOOLS = (function () {
     var cards = '';
     var banner = '';
 
-    // CARDS GROUP 1
     var cards_1 = {
         'title': "High Debt + High Salary = Serious need for education",
         'text': `
@@ -15,7 +14,6 @@ var MEDSCHOOLS = (function () {
         `,
         'img': "./assets/images/content/topViewTable.jpeg"
     };
-    // CARDS GROUP 2
     var cards_2 = {
         'title': "A Flawed System",
         'text': `
@@ -24,7 +22,6 @@ var MEDSCHOOLS = (function () {
         `,
         'img': "./assets/images/content/calculator.jpeg"
     };
-    // CARDS GROUP 3
     var cards_3 = {
         'title': "Just-In-Time Financial Education",
         'text': `
@@ -34,7 +31,6 @@ var MEDSCHOOLS = (function () {
         `,
         'img': "./assets/images/content/classroom.jpeg"
     };
-    // CARDS GROUP 4
     var cards_4 = {
         'title': "Provide the core concepts they need",
         'text': `
@@ -53,7 +49,6 @@ var MEDSCHOOLS = (function () {
         `,
         'img': "./assets/images/content/bwJen.jpeg"
     };
-    // CARDS GROUP 5
     var cards_5 = {
         'title': "Break the Stereotype",
         'text': `
@@ -62,7 +57,6 @@ var MEDSCHOOLS = (function () {
         `,
         'img': "./assets/images/content/docsMonitor.jpeg"
     };
-    // CARDS GROUP 6
     var cards_6 = {
         'title': "Be on the leading edge",
         'text': `
