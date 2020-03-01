@@ -119,12 +119,10 @@ var ABOUT = (function () {
     }
 
     function get_cards() {
-        alert("about.js:get_cards: cards: " + cards);
         return cards;
     }
 
     function init() {
-        alert("init about hit");
         cards = generate_cards();
     }
 
