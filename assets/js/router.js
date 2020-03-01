@@ -1,7 +1,9 @@
 var ROUTER = (function () {
     var m_cards_id = "cards";
     var m_banner_id = "banner";
+    var m_navLink_id = "";
     var m_pageName = "main";
+    var m_navlink_ids = [ 'home_link', 'medSchools_link', 'hospitals_link', 'calculator_link', 'about_link', 'reviews_link' ];
 
     $(window).on('hashchange', function(){
         route(decodeURI(window.location.hash));
@@ -15,7 +17,9 @@ var ROUTER = (function () {
             },
             '#About': function() {
                 m_pageName = "about";
-                alert("route:#About: m_pageName: " + m_pageName);
+            },
+            '#Reviews': function() {
+                m_pageName = "reviews";
             },
             '#MedSchools': function() {
                 m_pageName = "medSchools";
@@ -24,6 +28,7 @@ var ROUTER = (function () {
                 m_pageName = "hospitals";
             },
             '#Calculator': function() {
+                m_pageName = "calculator";
                 var win = window.open('http://www.trainmywallet.com/', '_blank');
                 if (win) {
                     //Browser has allowed it to be opened
@@ -55,6 +60,10 @@ var ROUTER = (function () {
                 banner_content = "";
                 cards_content = ABOUT.get_cards();
                 break;
+            case "reviews":
+                banner_content = "";
+                cards_content = REVIEWS.get_cards();
+                break;
             case 'medSchools':
                 banner_content = MEDSCHOOLS.get_banner();
                 cards_content = MEDSCHOOLS.get_cards();
@@ -74,6 +83,15 @@ var ROUTER = (function () {
         // Fill the banner
         $('#' + m_banner_id + '').html("");
         $('#' + m_banner_id + '').html(banner_content);
+        // Set active link
+        for (var i = 0; i < m_navlink_ids.length; i++) {
+            var id = m_navlink_ids[i];
+            if (id === (m_pageName + '_link')) {
+                $('#' + id + '').addClass('active');
+            } else {
+                $('#' + id + '').removeClass('active');
+            }
+        }
     }
 
     function init() {
