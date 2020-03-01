@@ -1,19 +1,16 @@
 var HOME = (function () {
     var cards = '';
 
-    // CARDS GROUP 1
     var cards_1 = {
         'title': "Financial Independence isn't something you stumble upon.",
         'text': "<p>It takes intention, dedication, and discipline to reach Financial Independence.</br></br>Past generations called this retirement. Your generation will redefine it…but only if you start the journey, and your story, exceptionally well.</br></br>You’ve made an intentional investment in your medical education.  Now it’s time to be intentional about your financial future.</p>",
         'img': "./assets/images/content/jandl.jpeg"
     };
-    // CARDS GROUP 2
     var cards_2 = {
         'title': "Learn the basics.</br>Set your intention.",
         'text': "At this point in your journey, you don't need a financial planner.  You need <b>financial education</b>.  This is financial eduation, simplified.</br></br><b>Nothing to sell.  Unbiased.  No commissions.</b>  No advice.  Just <b>education and information</b> to empower your decsions.  Hear the stories and lessons that would have made math class more interesting.</br></br>Money is a tool, not a goal.  Make an intentional investment in learning how to master that tool.  <b>Set your intention</b>.  Write your story.",
         'img': "./assets/images/content/doctors.jpeg"
     };
-    // CARDS GROUP 4
     var cards_4 = {
         'text': `<p> Avoid the 4 biggest money mistakes people make after medical school</p>
         <p>Create a strategic plan for big expenses like home, car and student loans</p>
