@@ -63,10 +63,10 @@ p {font-size: 16px;}
     font-size: 2rem;
 }
 .cursive-text {
-    font-family: 'Niconne', cursive;
+    font-family: 'Hamilyn', cursive;
 }
 .jumbotron-medschools {
-    background-image: url('../images/content/road1680x700.jpeg');
+    background-image: url('../images/content/books1680x700.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -74,7 +74,7 @@ p {font-size: 16px;}
     width: 100vw;
   }
   .jumbotron-hospitals {
-    background-image: url('../images/content/books1680x700.jpeg');
+    background-image: url('../images/content/road1680x700.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
