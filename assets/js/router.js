@@ -1,5 +1,4 @@
 var ROUTER = (function () {
-    var m_navbar_id = "nav_bar";
     var m_cards_id = "cards";
     var m_banner_id = "banner";
     var m_pageName = "main";
@@ -13,6 +12,10 @@ var ROUTER = (function () {
         var map = {
             '': function() {
                 m_pageName = "home";
+            },
+            '#About': function() {
+                m_pageName = "about";
+                alert("route:#About: m_pageName: " + m_pageName);
             },
             '#MedSchools': function() {
                 m_pageName = "medSchools";
@@ -44,29 +47,27 @@ var ROUTER = (function () {
     }
 
     function render_page() {
-        var nav_content = "";
         var cards_content = "";
         var banner_content = "";
 
         switch (m_pageName) {
+            case 'about':
+                banner_content = "";
+                cards_content = ABOUT.get_cards();
+                break;
             case 'medSchools':
-                nav_content = MEDSCHOOLS.get_navbar();
                 banner_content = MEDSCHOOLS.get_banner();
                 cards_content = MEDSCHOOLS.get_cards();
                 break;
             case 'hospitals':
-                nav_content = HOSPITALS.get_navbar();
                 banner_content = HOSPITALS.get_banner();
                 cards_content = HOSPITALS.get_cards();
                 break;
             default:
-                nav_content = HOME.get_navbar();
                 banner_content = CAROUSEL.get_carousel();
                 cards_content = HOME.get_cards();
+                break;
         }
-        // Fill the navbar			
-        $('#' + m_navbar_id + '').html("");
-        $('#' + m_navbar_id + '').html(nav_content);
         // Fill the cards
         $('#' + m_cards_id + '').html("");
         $('#' + m_cards_id + '').html(cards_content);

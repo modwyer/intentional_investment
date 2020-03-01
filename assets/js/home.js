@@ -1,5 +1,4 @@
 var HOME = (function () {
-    var navbar = '';
     var cards = '';
 
     // CARDS GROUP 1
@@ -23,7 +22,7 @@ var HOME = (function () {
         <p>Discover which plans are smart to use first, and which to avoid: 401(k), 403(b), IRA, Roth, HSA, brokerage accounts, and life insurance policies</p>
         <p>Grasp the concepts that schools should be teaching to demystify the stock market: diversification, compound interest, risk vs. return</p>
         <p>Learn how your money makes money for you; know the magic age where you don’t have to work anymore. (Compounding interest and the point of financial independence)</p>`,
-        'img': "./assets/images/content/typewriter.jpeg"
+        'img': "./assets/images/content/typeritersmall.png"
     };
 
     var create_cards_functions = {
@@ -92,10 +91,10 @@ var HOME = (function () {
                 <div class="container-fluid home-card-4">
                     <div class="card mb-3 text-white bg-dark">
                         <div class="row no-gutters">
-                            <div class="col-xl-8 hc4-img">
+                            <div class="col-xl-4 hc4-img">
                                 <img src="` + cards_4.img + `" class="card-img" alt="Card image">
                             </div>
-                            <div class="col-xl-4">
+                            <div class="col-xl-8">
                                 <div class="card-body hc4-body">
                                     <span>` + cards_4.text + `</span>
                                 </div>
@@ -106,26 +105,6 @@ var HOME = (function () {
             `;
         }
     };
-
-    function generate_navbar() {
-        return`<ul class="navbar-nav text-left ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a id="homeMedLink" class="nav-link" href="#MedSchools">Med Schools</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Hospitals">Hospitals</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Calculator">Calculator</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-        </ul>`;
-    }
 
     function generate_cards() {
         var ret = '';
@@ -138,22 +117,16 @@ var HOME = (function () {
         return ret;
     }
 
-    function get_navbar() {
-        return navbar;
-    }
-
     function get_cards() {
         return cards;
     }
 
     function init() {
-        navbar = generate_navbar();
         cards = generate_cards();
     }
 
 	return {
         init: init,
-        get_navbar: get_navbar,
         get_cards: get_cards
     };
 

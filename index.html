@@ -1,143 +1,88 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/css.css">
+    <link href="https://fonts.googleapis.com/css?family=Niconne&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./assets/css/css.css">
 
+    <link rel="shortcut icon" href="./assets/images//logos/favicon32x32.png">
     <title>Intentional Investment</title>
   </head>
   <body>
-    <!-- Logo -->
 
+    <!-- Logo -->
     <div class="row">
         <div class="container-fluid col-xl-12 bg-1">
-            <img src="./assets/whiteTextGrayBGGradiant_684x70.png" class="responsive" style="display:inline" alt="Logo" width="684" height="70">
+            <img src="./assets/images/logos/whiteTextGrayBGGradiant_684x70.png" class="responsive" style="display:inline" alt="Logo" width="684" height="70">
         </div>
     </div>
 
     <header class="header sticky-top">
-    <nav class="navbar navbar-default navbar-expand-lg sticky-top">
-        <!-- <a class="navbar-brand" href="#">Intentional Investment</a> -->
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_bar" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
-      
-      <div class="container-fluid nav-container">
-        <div class="navbar-header">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_bar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-        </div>
-        <div class="collapse navbar-collapse" id="nav_bar">
-          <!-- <ul class="navbar-nav text-right ml-auto" id="nav_bar">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul> -->
-        </div>
-      </nav>
+        <nav class="navbar-expand-sm navbar-expand-md navbar-expand-xl navbar navbar-light">
+            <div class="container-fluid nav-container">
+                <div class="navbar-header">
+                  <!-- <a class="navbar-brand" href="#">Intentional Investment</a> -->
+                  <a href="#" src="./assets/images/logos/ipadlogo72x72.png" class="navbar-brand responsive" style="display:inline" alt="Logo" width="42" height="42"></a>
+                    <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#nav_bar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" onclick="MAIN.menu_click()" id="nav_bar">
+                  <ul class="navbar-nav text-left ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="homeMedLink" class="nav-link" href="#MedSchools">Medical Schools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Hospitals">Hospitals/Residency Programs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#Reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Calculator">Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="dropshadow sticky-top"></div>
     </header>
+    
+    <div id="banner"></div>
+    <main role="main">
+      <div id="cards"></div>
+      <footer class="container-fluid text-center">
+        <p>Intentional Investment 2020</p> 
+      </footer>
+    </main>
 
-<main role="main">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+    <script src="./assets/js/medschools.js"></script>
+    <script src="./assets/js/hospitals.js"></script>
+    <script src="./assets/js/router.js"></script>
+    <script src="./assets//js/about.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        $(document).ready(function(){ 
+            MAIN.init();
 
-  <div id="demo" class="carousel slide" data-ride="carousel">
-
-    <!-- Indicators -->
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-    </ul>
-  
-    <!-- The slideshow -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="la.jpg" alt="Los Angeles">
-      </div>
-      <div class="carousel-item">
-        <img src="chicago.jpg" alt="Chicago">
-      </div>
-      <div class="carousel-item">
-        <img src="ny.jpg" alt="New York">
-      </div>
-    </div>
-  
-    <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
-  
-  </div>
-
-<!-- First Container -->
-<div class="container-fluid container-fluid-padded bg-2 text-center">
-  <h3 class="margin">Who Am I?</h3>
-  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I'm an adventurer</h3>
-</div>
-
-<!-- Second Container -->
-<div class="container-fluid container-fluid-padded bg-3 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
-</div>
-
-<!-- Third Container (Grid) -->
-<div class="container-fluid container-fluid-padded bg-4 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="container-fluid bg-5 text-center">
-  <p>Intentional Investment</p> 
-</footer>
-</main>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
- -->
-
-
-<script src="./js/js.js"></script>
-<script>
-	$(document).ready(function(){ 
-    MAIN_MODULE.init();
-	});
-</script>
+            $(window).trigger('hashchange');            
+            
+        });
+    </script>
 </body>
 </html>

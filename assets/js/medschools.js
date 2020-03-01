@@ -1,5 +1,4 @@
 var MEDSCHOOLS = (function () {
-    var navbar = '';
     var cards = '';
     var banner = '';
 
@@ -193,29 +192,6 @@ var MEDSCHOOLS = (function () {
         }
     };    
 
-    function generate_navbar() {
-        return `<ul class="navbar-nav text-left ml-auto">
-        <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item active">
-        <a class="nav-link" href="#MedSchools">Med Schools <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#Hospitals">Residency Programs</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Kind Words</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#Calculator">Calculator</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-        </li>
-        </ul>`; 
-    }
-
     function generate_banner() {
         return `
             <div class="jumbotron-fluid">
@@ -235,10 +211,6 @@ var MEDSCHOOLS = (function () {
         return ret;
     }
 
-    function get_navbar() {
-        return navbar;
-    }
-
     function get_banner() {
         return banner;
     }
@@ -248,14 +220,12 @@ var MEDSCHOOLS = (function () {
     }
 
     function init() {
-        navbar = generate_navbar();
         cards = generate_cards();
         banner = generate_banner();
     }
 
     return {
         init: init,
-        get_navbar: get_navbar,
         get_cards: get_cards,
         get_banner: get_banner
     };

@@ -6,6 +6,7 @@ var MAIN = (function () {
         MEDSCHOOLS.init();
         HOSPITALS.init();
         ROUTER.init();
+        ABOUT.init();
     }
 
     function menu_click() {

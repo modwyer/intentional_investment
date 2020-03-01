@@ -1,5 +1,4 @@
 var CAROUSEL = (function () {
-    //var m_carousel_id = "banner";
     var carousel = "";
 
     function generate_carousel() {
@@ -15,7 +14,7 @@ var CAROUSEL = (function () {
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Financial Independence is Freedom</h1>
                         <p>Freedom is what we all want. Financial Independence is how you get there. Get to Financial Independence faster by learning a few core principles about money.</p>
-                        <p>Make an Intentional Investment in your future by learning these financial concepts (principles) in an entertaining, interactive and memorable way.</p>
+                        <p>Make an Intentional Investment in your future by learning these financial concepts in an entertaining, interactive and memorable way.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -39,8 +38,6 @@ var CAROUSEL = (function () {
 
     function create_carousel() {
         carousel = generate_carousel();
-        // $('#' + m_carousel_id + '').html("");
-        // $('#' + m_carousel_id + '').html(carousel_content);
     }
 
     function get_carousel() {
