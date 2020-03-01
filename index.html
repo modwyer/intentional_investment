@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Niconne&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Hamilyn&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./assets/css/css.css">
 
     <link rel="shortcut icon" href="./assets/images//logos/favicon32x32.png">
@@ -32,23 +32,23 @@
                 </div>
                 <div class="collapse navbar-collapse" onclick="MAIN.menu_click()" id="nav_bar">
                   <ul class="navbar-nav text-left ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a id="home_link" class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a id="homeMedLink" class="nav-link" href="#MedSchools">Medical Schools</a>
+                        <a id="medSchools_link" class="nav-link" href="#MedSchools">Medical Schools</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Hospitals">Hospitals/Residency Programs</a>
+                        <a id="hospitals_link" class="nav-link" href="#Hospitals">Hospitals/Residency Programs</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#Reviews">Reviews</a>
+                        <a id="reviews_link" class="nav-link" href="#Reviews">Reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Calculator">Calculator</a>
+                        <a id="calculator_link" class="nav-link" href="#Calculator">Calculator</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#About">About</a>
+                        <a id="about_link" class="nav-link" href="#About">About</a>
                     </li>
                 </ul>
                 </div>
@@ -74,13 +74,16 @@
     <script src="./assets/js/medschools.js"></script>
     <script src="./assets/js/hospitals.js"></script>
     <script src="./assets/js/router.js"></script>
-    <script src="./assets//js/about.js"></script>
+    <script src="./assets/js/about.js"></script>
+    <script src="./assets/js/reviews.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
         $(document).ready(function(){ 
             MAIN.init();
 
-            $(window).trigger('hashchange');            
+            $(window).trigger('hashchange');   
+            
+            
             
         });
     </script>
