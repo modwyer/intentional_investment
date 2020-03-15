@@ -1,11 +1,17 @@
 var ABOUT = (function () {
     var cards = '';
+    const m_cards_id = 'cards';
 
     // CARDS GROUP 1
     var cards_1 = {
         'title': "This is the About page.",
-        'text': "<p>This is the content of the About page</p>",
-        'img': "./assets/images/content/jandl.jpeg"
+        'text': `
+        <p>A bit about Jennifer</p>
+        <p>Jennifer has worked in investment education for over 20 years.  She spent a few years as attorney practicing in Tax and ERISA/401(k) law at a large law firm in Indianapolis before returning to her passion of educating people towards financial freedom.</p>
+        <p>She has educated over 20,000 people in 30 different states on money and investing. For the last 10 years, she has individually counseled physicians, attorneys, pharmacists, nurse practitioners, and other high-income earners while working for the nation’s second largest retirement plan provider. She’s a licensed attorney and registered investment advisor.</p>
+        <p>Her knowledge goes beyond stocks and bonds. She’s also been an occasional real estate investor, restaurateur, summer resort owner and entrepreneur. But her best investment has been in her family, including her husband Chad and their two financially savvy kids.</p> 
+        `,
+        'img': "./assets/images/content/aboutImg.jpeg"
     };
     // CARDS GROUP 2
     // var cards_2 = {
@@ -25,24 +31,74 @@ var ABOUT = (function () {
     //     'img': "./assets/images/content/typeritersmall.png"
     // };
 
-    var create_cards_functions = {
-        'create_cards_1': function() {
-            return `
-                <div class="container-fluid card-group home-card-1">
-                    <div class="row align-items-center min-vh-100">
-                        <div class="card col-xl-5" >
-                            <div class="card-body">
-                                <h2 class="card-title hc1-title">` + cards_1.title + `</h2>
-                                <span class="card-text card-text1">` + cards_1.text + `</span>
-                            </div>
-                        </div>
-                        <div class="card col-xl-7">
-                            <div class="card card-image1">
-                                <img class="card-img-top" src="` + cards_1.img + `" alt="Card image">
-                            </div>
+    function change_about_content() {
+        const page_name = ROUTER.get_current_page();
+        if (page_name != "about") { return; }
+
+        var cards_content = "";
+        if (window.matchMedia("(min-width: 400px) and (min-width: 1023px)").matches) {
+            cards_content = 
+            `
+                <main>
+                    <wrapper>
+                        <section><span>` + cards_1.text + `</span></section>
+                        <section><span></span></section>
+                        <section><span></span></section>
+                    </wrapper>
+                </main>
+            `;
+        } else {
+            cards_content = 
+            `
+                <div class="container-fluid">
+                <div class="row min-vh-100">
+                    <div class="col-xl-7" style="border:1px solid #323132; background-color:#c0bba0; padding:25px;">
+                        <span>` + cards_1.text + `</span>
+                    </div>
+                    <div class="col-xl-5"">
+                        <div class="row align-items-bottom">
+                            <img src="` + cards_1.img + `" alt="Close up photo of Jennifer">
                         </div>
                     </div>
                 </div>
+            </div>
+            `;
+        }
+
+        $('#' + m_cards_id + '').html("");
+        $('#' + m_cards_id + '').html(cards_content);
+    }
+
+    var create_cards_functions = {
+        'create_cards_1': function() {
+            // var ret = "";
+            // if (window.matchMedia("(min-width: 480px)").matches) {
+            //     ret = `
+            //     <div class="container-fluid">
+            //         <div class="row min-vh-100">
+            //             <div class="col-xl-7" style="border:1px solid #323132; background-color:#c0bba0; padding:25px;">
+            //                 <span>` + cards_1.text + `</span>
+            //             </div>
+            //             <div class="col-xl-5" style="border:1px solid green;">
+            //                 <div class="row align-items-bottom">
+            //                     <img src="` + cards_1.img + `" alt="Close up photo of Jennifer">
+            //                 </div>
+            //             </div>
+            //         </div>
+            //     </div>
+            //   `;
+            // } 
+
+
+
+            return `
+            <main>
+                <wrapper>
+                    <section><span>` + cards_1.text + `</span></section>
+                    <section><span></span></section>
+                    <section><span></span></section>
+                </wrapper>
+            </main>
             `;
         }
         //,
@@ -128,7 +184,8 @@ var ABOUT = (function () {
 
 	return {
         init: init,
-        get_cards: get_cards
+        get_cards: get_cards,
+        change_about_content: change_about_content
     };
 
 }());
