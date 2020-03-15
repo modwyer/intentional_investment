@@ -81,9 +81,17 @@
         $(document).ready(function(){ 
             MAIN.init();
 
-            $(window).trigger('hashchange');   
+            $(window).trigger('hashchange');  
+            $(window).resize(function(){
+                const page_name = ROUTER.get_current_page();
+                if (page_name === "about") { 
+                    ABOUT.change_about_content();
+                }
+            }); 
             
-            
+            var x = window.matchMedia("(min-width: 400px)")
+            ABOUT.change_about_content(x) // Call listener function at run time
+            x.addListener(ABOUT.change_about_content) // Attach listener function on state changes 
             
         });
     </script>

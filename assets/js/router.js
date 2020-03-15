@@ -58,7 +58,7 @@ var ROUTER = (function () {
         switch (m_pageName) {
             case 'about':
                 banner_content = "";
-                cards_content = ABOUT.get_cards();
+                cards_content = ABOUT.change_about_content();
                 break;
             case "reviews":
                 banner_content = "";
@@ -94,11 +94,16 @@ var ROUTER = (function () {
         }
     }
 
+    function get_current_page() {
+        return m_pageName
+    }
+
     function init() {
         //alert("router init hit");
     }
 
     return {
-        init: init
+        init: init,
+        get_current_page: get_current_page
     }
 }());
