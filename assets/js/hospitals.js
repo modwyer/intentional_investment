@@ -190,7 +190,7 @@ var HOSPITALS = (function () {
             <div class="jumbotron-fluid">
                 <div class="jumbotron jumbotron-hospitals">
                     <div class="row text-right float-right">
-                        <div class="col-md-7 ml-md-auto" style="padding: 20px; background-color:rgba(255,255,255,.7);">
+                        <div class="col-md-7 ml-md-auto banner-text">
                             <h2 class="display-5">A Way Forward</h2>
                             <p class="lead">Reduce burnout.<br/>
                             Make an Intentional Investment in the financial future of your young doctors.</p>
