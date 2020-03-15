@@ -15,6 +15,7 @@ var ABOUT = (function () {
     };
 
     function change_about_content() {
+        
         var cards_content = "";
         if (window.matchMedia("(min-width: 400px) and (min-width: 1023px)").matches) {
             cards_content = small_about_content;
@@ -26,7 +27,7 @@ var ABOUT = (function () {
     }
 
     function init() {
-        small_about_content  = 
+        small_about_content = 
         `
             <main>
                 <wrapper>

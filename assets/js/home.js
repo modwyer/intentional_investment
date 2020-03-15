@@ -19,7 +19,7 @@ var HOME = (function () {
         <p>Discover which plans are smart to use first, and which to avoid: 401(k), 403(b), IRA, Roth, HSA, brokerage accounts, and life insurance policies</p>
         <p>Grasp the concepts that schools should be teaching to demystify the stock market: diversification, compound interest, risk vs. return</p>
         <p>Learn how your money makes money for you; know the magic age where you don’t have to work anymore. (Compounding interest and the point of financial independence)</p>`,
-        'img': "./assets/images/content/typeritersmall.png"
+        'img': "./assets/images/content/typewriter_sm.png"
     };
 
     var create_cards_functions = {
@@ -57,7 +57,7 @@ var HOME = (function () {
                                     <h2 class="card-title">` + cards_2.title + `</h2>
                                 </div>
                             </div>
-                            <div class="card card-text2 col-xl-6" >
+                            <div class="card col-xl-6" >
                                 <div class="card-body hc2-text">
                                     <p class="card-text">` + cards_2.text + `</p>
                                 </div>
