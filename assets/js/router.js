@@ -58,7 +58,7 @@ var ROUTER = (function () {
         switch (m_pageName) {
             case 'about':
                 banner_content = "";
-                cards_content = ABOUT.get_cards();
+                cards_content = ABOUT.change_about_content();
                 break;
             case "reviews":
                 banner_content = "";
