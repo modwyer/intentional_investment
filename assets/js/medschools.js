@@ -189,7 +189,15 @@ var MEDSCHOOLS = (function () {
     function generate_banner() {
         return `
             <div class="jumbotron-fluid">
-                <div class="jumbotron jumbotron-medschools"></div>
+                <div class="jumbotron jumbotron-medschools">
+                    <div class="row text-left float-right">
+                        <div class="col-md-6 ml-md-auto" style="padding: 20px; background-color:rgba(255,255,255,.5);">
+                            <h2 class="display-5">The Next Lesson</h2>
+                            <p class="lead">You've taught them to be greate physicians.</p>
+                            <p class="lead">Next, give them the financial education they need to be prepared for life.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         `;
     }
