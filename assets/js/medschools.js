@@ -69,7 +69,7 @@ var MEDSCHOOLS = (function () {
     var create_cards_functions = {
         'create_cards_1': function() {
             return `
-                <div class="container-fluid card-group home-card-1">
+                <div class="container-fluid card-group card-1">
                     <div class="row align-items-center min-vh-100">
                         <div class="card col-xl-5" >
                             <div class="card-body">
@@ -88,7 +88,7 @@ var MEDSCHOOLS = (function () {
         },
         'create_cards_2': function() {
             return `
-                <div class="container-fluid card-group home-card-2">
+                <div class="container-fluid card-group card-2">
                     <div class="row align-items-center min-vh-100">
                     <div class="card col-xl-7">
                         <div class="card card-image1">
@@ -126,7 +126,7 @@ var MEDSCHOOLS = (function () {
         },
         'create_cards_4': function() {
             return `
-                <div class="container-fluid card-group home-card-2">
+                <div class="container-fluid card-group ms-card-4">
                     <div class="row align-items-center min-vh-100">
                         <div class="card col-xl-7" >
                             <div class="card-body">
