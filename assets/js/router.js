@@ -94,11 +94,16 @@ var ROUTER = (function () {
         }
     }
 
+    function get_current_page() {
+        return m_pageName
+    }
+
     function init() {
         //alert("router init hit");
     }
 
     return {
-        init: init
+        init: init,
+        get_current_page: get_current_page
     }
 }());
