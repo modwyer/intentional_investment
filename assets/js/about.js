@@ -14,8 +14,7 @@ var ABOUT = (function () {
         'img': "./assets/images/content/aboutImg.jpeg"
     };
 
-    function change_about_content() {
-        
+    function change_about_content() {        
         var cards_content = "";
         if (window.matchMedia("(min-width: 400px) and (min-width: 1023px)").matches) {
             cards_content = small_about_content;
