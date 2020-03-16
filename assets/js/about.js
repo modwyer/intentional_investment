@@ -25,7 +25,6 @@ var ABOUT = (function () {
         $('#' + m_cards_id + '').html("");
         $('#' + m_cards_id + '').html(cards_content);
     }
-
     function init() {
         small_about_content = 
         `
@@ -54,9 +53,18 @@ var ABOUT = (function () {
         `;
     }
 
+    function get_content() {
+        if (window.matchMedia("(min-width: 400px) and (min-width: 1023px)").matches) {
+            return small_about_content;
+        } else {
+            return big_about_content;
+        }
+    }
+
 	return {
         init: init,
-        change_about_content: change_about_content
+        change_about_content: change_about_content,
+        get_content: get_content
     };
 
 }());

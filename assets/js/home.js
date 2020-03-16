@@ -25,7 +25,7 @@ var HOME = (function () {
     var create_cards_functions = {
         'create_cards_1': function() {
             return `
-                <div class="container-fluid card-group home-card-1">
+                <div class="container-fluid card-group card-1">
                     <div class="row align-items-center min-vh-100">
                         <div class="card col-xl-5" >
                             <div class="card-body">
@@ -44,7 +44,7 @@ var HOME = (function () {
         },
         'create_cards_2': function() {
             return `
-                <div class="container-fluid card-group home-card-2">
+                <div class="container-fluid card-group card-2">
                     <div class="row align-items-center min-vh-100">
                         <div class="card mx-auto col-xl-5 card-image2">
                             <div class="card">
@@ -69,7 +69,7 @@ var HOME = (function () {
         },
         'create_cards_3': function() {
             return `
-                <div class="container-fluid cursive-text home-card-3">
+                <div class="container-fluid cursive-text card-3">
                     <div class="row hc3-row1">
                         <div class="col align-self-start col-xl-12">
                             <h1>Write your money story today.</h1>
@@ -85,7 +85,7 @@ var HOME = (function () {
         },
         'create_cards_4': function() {
             return `
-                <div class="container-fluid home-card-4">
+                <div class="container-fluid card-4">
                     <div class="card mb-3 text-white bg-dark">
                         <div class="row no-gutters">
                             <div class="col-xl-4 hc4-img">
