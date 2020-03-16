@@ -11,7 +11,7 @@ var ABOUT = (function () {
         <p>She has educated over 20,000 people in 30 different states on money and investing. For the last 10 years, she has individually counseled physicians, attorneys, pharmacists, nurse practitioners, and other high-income earners while working for the nation’s second largest retirement plan provider. She’s a licensed attorney and registered investment advisor.</p>
         <p>Her knowledge goes beyond stocks and bonds. She’s also been an occasional real estate investor, restauranteur, summer resort owner and entrepreneur. But her best investment has been in her family, including her husband Chad and their two financially savvy kids.</p> 
         `,
-        'img': "./assets/images/content/aboutImg.jpeg"
+        'img': "./assets/images/content/aboutImg_600x428.jpeg"
     };
 
     function change_about_content() {        
