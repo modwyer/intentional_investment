@@ -60,6 +60,9 @@ p {font-size: 16px;}
 .hc1-title {
     padding-bottom: 30px;
 }
+.rev-card1 {
+    margin: 25px 0 25px 0;
+}
 .hosp-card1-image {
     margin: 0 0 25px 0;
 }
@@ -77,16 +80,25 @@ p {font-size: 16px;}
     font-size: 1.2rem;
     /* border: 1px solid yellow; */
 }
+.rev-card1-image {
+    margin: 25px 0 0 0;
+}
 .card-2 {
     margin-top: 50px;
 }
 /* .card-image2 {
     border: 1px solid yellow;
 } */
+.rev-card2 {
+    margin: 25px 0 25px 0;
+}
 .hosp-card2-title {
     margin: 0 0 25px 0;
 }
 .hosp-card2-image {
+    margin: 25px 0 25px 0;
+}
+.rev-card2-image {
     margin: 25px 0 25px 0;
 }
 .ms-card2-image {
@@ -115,6 +127,9 @@ p {font-size: 16px;}
 /* .ms-card3-title {
     border: 1px solid blue;
 } */
+.rev-card3 {
+    margin: 25px 0 25px 0;
+}
 .hosp-card3 li {
     font-size: 1rem;
 }
@@ -128,9 +143,24 @@ p {font-size: 16px;}
 .ms-card3-image {
     margin: 25px 0 25px 0;
 }
+.rev-card3-image {
+    margin: 25px 0 25px 0;
+}
 /* .ms-card4-title {
     border: 1px solid blue;
 } */
+.rev-card4 {
+    margin: 25px 0 25px 0;
+}
+.rev-card4-title {
+    margin: 0 0 50px 0;
+}
+.rev-card4 li {
+    font-size: 1rem;
+}
+.rev-card4 h2 {
+    font-size: 1rem;
+}
 .hosp-card4-image {
     margin: 50px 0 25px 0;
 }
