@@ -77,6 +77,8 @@ var ROUTER = (function () {
                 cards_content = HOME.get_cards();
                 break;
         }
+        // Scroll to the top of the page
+        window.scrollTo(70, 0);
         // Fill the cards
         $('#' + m_cards_id + '').html("");
         $('#' + m_cards_id + '').html(cards_content);
