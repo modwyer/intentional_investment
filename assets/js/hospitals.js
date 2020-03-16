@@ -75,16 +75,16 @@ var HOSPITALS = (function () {
     var create_cards_functions = {
         'create_cards_1': function() {
             return `
-                <div class="container-fluid card-group home-card-1">
-                    <div class="row align-items-center min-vh-100">
+                <div class="container-fluid card-group hosp-card1">
+                    <div class="row align-items-center">
                         <div class="card col-xl-5" >
                             <div class="card-body">
-                                <h2 class="card-title hc1-title">` + cards_1.title + `</h2>
-                                <span class="card-text card-text1" style="font-size: 130px;">` + cards_1.text + `</span>
+                                <h2 class="card-title hosp-card1-title">` + cards_1.title + `</h2>
+                                <span class="card-text hosp-card1-text">` + cards_1.text + `</span>
                             </div>
                         </div>
                         <div class="card col-xl-7">
-                            <div class="card card-image1">
+                            <div class="card hosp-card1-image">
                                 <img class="card-img-top" src="` + cards_1.img + `" alt="Card image">
                             </div>
                         </div>
@@ -94,17 +94,17 @@ var HOSPITALS = (function () {
         },
         'create_cards_2': function() {
             return `
-                <div class="container-fluid card-group home-card-2">
-                    <div class="row align-items-center min-vh-100">
+                <div class="container-fluid card-group hosp-card2">
+                    <div class="row align-items-center">
                     <div class="card col-xl-7">
-                        <div class="card card-image1">
+                        <div class="card hosp-card2-image">
                             <img class="card-img-top" src="` + cards_2.img + `" alt="Card image">
                         </div>
                     </div>
                         <div class="card col-xl-5" >
                             <div class="card-body">
-                                <h2 class="card-title">` + cards_2.title + `</h2>
-                                <span class="card-text">` + cards_2.text + `</span>
+                                <h2 class="card-title hosp-card2-title">` + cards_2.title + `</h2>
+                                <span class="card-text hosp-card2-text">` + cards_2.text + `</span>
                             </div>
                         </div>
                     </div>
@@ -113,16 +113,16 @@ var HOSPITALS = (function () {
         },
         'create_cards_3': function() {
             return `
-            <div class="container-fluid card-group home-card-3">
-                <div class="row align-items-center min-vh-100">
+            <div class="container-fluid card-group hosp-card3">
+                <div class="row align-items-center">
                     <div class="card col-xl-7" >
                         <div class="card-body">
-                            <h2 class="card-title hc1-title">` + cards_3.title + `</h2>
-                            <span class="card-text">` + cards_3.text + `</span>
+                            <h2 class="card-title hosp-card3-title">` + cards_3.title + `</h2>
+                            <span class="card-text hosp-card3-text">` + cards_3.text + `</span>
                         </div>
                     </div>
                     <div class="card col-xl-5">
-                        <div class="card card-image1">
+                        <div class="card hosp-card3-image">
                             <img class="card-img-top" src="` + cards_3.img + `" alt="Card image">
                         </div>
                     </div>
@@ -132,17 +132,17 @@ var HOSPITALS = (function () {
         },
         'create_cards_4': function() {
             return `
-                <div class="container-fluid card-group home-card-2">
-                    <div class="row align-items-center min-vh-100">
+                <div class="container-fluid card-group hosp-card4">
+                    <div class="row align-items-center">
                     <div class="card col-xl-7">
-                        <div class="card card-image1">
+                        <div class="card hosp-card4-image">
                             <img class="card-img-top" src="` + cards_4.img + `" alt="Card image">
                         </div>
                     </div>
                         <div class="card col-xl-5" >
                             <div class="card-body">
-                                <h2 class="card-title">` + cards_4.title + `</h2>
-                                <span class="card-text">` + cards_4.text + `</span>
+                                <h2 class="card-title hosp-card4-title">` + cards_4.title + `</h2>
+                                <span class="card-text hosp-card4-text">` + cards_4.text + `</span>
                             </div>
                         </div>
                     </div>
@@ -151,16 +151,16 @@ var HOSPITALS = (function () {
         },
         'create_cards_5': function() {
             return `
-            <div class="container-fluid card-group home-card-2">
-                <div class="row align-items-center min-vh-100">
+            <div class="container-fluid card-group hosp-card5">
+                <div class="row align-items-center">
                     <div class="card col-xl-6" >
                         <div class="card-body">
-                            <h2 class="card-title hc1-title">` + cards_5.title + `</h2>
-                            <span class="card-text">` + cards_5.text + `</span>
+                            <h2 class="card-title hosp-card5-title">` + cards_5.title + `</h2>
+                            <span class="card-text hosp-card5-text">` + cards_5.text + `</span>
                         </div>
                     </div>
                     <div class="card col-xl-6">
-                        <div class="card card-image1">
+                        <div class="card hosp-card5-image">
                             <img class="card-img-top" src="` + cards_5.img + `" alt="Card image">
                         </div>
                     </div>
@@ -170,12 +170,12 @@ var HOSPITALS = (function () {
         },
         'create_cards_6': function() {
             return `
-            <div class="container-fluid card-group hospital-card-6">
+            <div class="container-fluid card-group hosp-card6">
                 <div class="row  mx-auto">
                     <div class="card col-xl-12" style="background-color: lightblue">
                         <div class="card-body">
-                            <h2 class="card-title hc1-title">` + cards_6.title + `</h2>
-                            <span class="card-text">` + cards_6.text + `</span>
+                            <h2 class="card-title hosp-card6-title">` + cards_6.title + `</h2>
+                            <span class="card-text hosp-card6-text">` + cards_6.text + `</span>
                         </div>
                     </div>
                     
