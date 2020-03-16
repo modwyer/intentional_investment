@@ -27,7 +27,9 @@ var REVIEWS = (function () {
     };
     var cards_3 = {
         'text': `
-            <p>(quote)</p>                
+            <p>“This educational presentation is a must for residents and fellows.  They learned important investment strategies they can implement while in training and continue upon graduation.  
+            The residents and fellows were hanging on Jennifer’s every word.  We hope she will return on an annual basis.”</p> 
+            <p>Lisa Zipsie, Designated Institutional Official, Riverside Medical Center.</p> 
         `,
         'img': "./assets/images/content/riverside.png"
     };
@@ -125,12 +127,12 @@ var REVIEWS = (function () {
             return `
                 <div class="container-fluid card-group rev-card3">
                     <div class="row align-items-center">
-                        <div class="card col-xl-7">
+                        <div class="card col-xl-4">
                             <div class="card rev-card3-image">
                                 <img class="card-img-top" src="` + cards_3.img + `" alt="Card image">
                             </div>
                         </div>
-                        <div class="card col-xl-5" >
+                        <div class="card col-xl-8" >
                             <div class="card-body">
                                 <span class="card-text rev-card3-text">` + cards_3.text + `</span>
                             </div>
