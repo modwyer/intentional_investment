@@ -69,7 +69,7 @@ var MEDSCHOOLS = (function () {
     var create_cards_functions = {
         'create_cards_1': function() {
             return `
-                <div class="container-fluid card-group card-1">
+                <div class="container-fluid card-group ms-card1">
                     <div class="row align-items-center">
                         <div class="card col-xl-5" >
                             <div class="card-body">
