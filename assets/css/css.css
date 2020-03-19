@@ -12,6 +12,7 @@ p {font-size: 16px;}
 .margin {margin-bottom: 45px;}
 .bg-1 {
     background-color: #323132;
+    padding-left: 10px;
 }
 .card {
     border: none;
@@ -179,6 +180,19 @@ p {font-size: 16px;}
     height: 100vh;
     width: 100vw;
 }
+#jenAboutPhoto {
+    max-width: 100%;
+    height: auto;
+    background-image: url('../images/content/aboutImg_1024x731.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about-text {
+    border:1px solid #323132; 
+    background-color:#c0bba0; 
+    padding:25px;
+}
 .hospital-card-6 {
     align-content:center;
     margin-top: 25px;
@@ -243,7 +257,7 @@ p {font-size: 16px;}
 .site-footer
 {
     background-color:#323132;
-    padding:45px 0 20px;
+    padding: 45px 0 20px;
     font-size:15px;
     line-height:24px;
     color:#dacfcf;
@@ -444,10 +458,12 @@ p {font-size: 16px;}
         grid-column: 3 / 6; 
         grid-row: 3 / 4; 
         z-index: 3;
-        background-image: url('../images/content/aboutImg.jpeg');
+        background-image: url('../images/content/aboutImg_600x428.jpeg');
         background-position: center; 
         background-repeat: no-repeat; 
         background-size: cover;
+        width: 100%;
+        height: auto;
     }      
     section {
         display: flex;
@@ -507,6 +523,9 @@ p {font-size: 16px;}
 @media (min-width: 1921px) {
     h1 {font-size:3rem;}
     h2 {font-size:3rem;}
+    .card-text1 p {
+        font-size: 2rem;
+    }
     .hc2-title {
         margin-top: 50px;
         padding: 0 0 0 500px;
@@ -520,14 +539,101 @@ p {font-size: 16px;}
     .ms-card1 li {
         font-size: 2rem;
     }
+    .hosp-card1 p {
+        font-size: 2rem;
+    }
+    .hosp-card1 li {
+        font-size: 2rem;
+    }
+    .hosp-card1 h2 {
+        font-size: 3rem;
+    }
+    .hosp-card2 p {
+        font-size: 2rem;
+    }
+    .hosp-card2 li {
+        font-size: 2rem;
+    }
+    .hosp-card2 h2 {
+        font-size: 3rem;
+    }
+    .hosp-card3 p {
+        font-size: 2rem;
+    }
+    .hosp-card3 li {
+        font-size: 2rem;
+    }
+    .hosp-card3 h2 {
+        font-size: 3rem;
+    }
+    .hosp-card4 p {
+        font-size: 2rem;
+    }
+    .hosp-card4 li {
+        font-size: 2rem;
+    }
+    .hosp-card4 h2 {
+        font-size: 3rem;
+    }
+    .hosp-card5 p {
+        font-size: 2rem;
+    }
+    .hosp-card5 li {
+        font-size: 2rem;
+    }
+    .hosp-card5 h2 {
+        font-size: 3rem;
+    }
+    .hosp-card6 p {
+        font-size: 2rem;
+    }
+    .hosp-card6 li {
+        font-size: 2rem;
+    }
+    .hosp-card6 h2 {
+        font-size: 3rem;
+    }
+    .rev-card1 p {
+        font-size: 2rem;
+    }
+    .rev-card2 p {
+        font-size: 2rem;
+    }
+    .rev-card3 p {
+        font-size: 2rem;
+    }
+    .rev-card4 {
+        margin-top: 100px;
+    }
+    .rev-card4-text {
+        margin-top: 150px;
+    }
+    .rev-card4 li {
+        font-size: 2rem;
+    }
+    .rev-card4 h2 {
+        font-size: 3rem;
+    }
+    .ms-card1 h2 {
+        font-size: 3rem;
+    }
+    .ms-card2 p {
+        font-size: 2rem;
+    }
+    .ms-card2 h2 {
+        font-size: 3rem;
+    }
     .card-2 p {
         font-size: 2rem;
     }
-    .home-card-3 p {
-        font-size: 1.5rem;
+    .ms-card3 p {
+        font-size: 2rem;
     }
-    .home-card-3 h1 {
-        font-size: 5rem;
+    .ms-card3 h2 {
+        font-size: 3rem;
+    }
+    .card-3 h1 {
+        font-size: 4rem;
     }
     .hc3-row1 {
         padding-left: 350px;
@@ -535,14 +641,41 @@ p {font-size: 16px;}
     .hc3-row2 {
         padding-right: 450px;
     }
+    .card-4 {
+        padding: 0;
+    }
+    .ms-card4 p {
+        font-size: 2rem;
+    }
+    .ms-card4 h2 {
+        font-size: 3rem;
+    }
+    .ms-card4 li {
+        font-size: 2rem;
+    }
     .ms-card3-image {
         margin-bottom: 50px;
     }
     .hc4-img {
-        padding: 40px 50px 0 40px;
+        padding: 0px 50px 0 40px;
     }
     .hc4-body {
         padding: 50px 50px 0 50px;
+    }
+    .hc4-body p {
+        font-size: 2rem;
+    }
+    .ms-card5 p {
+        font-size: 2rem;
+    }
+    .ms-card5 h2 {
+        font-size: 3rem;
+    }
+    .ms-card6 p {
+        font-size: 2rem;
+    }
+    .ms-card6 h2 {
+        font-size: 3rem;
     }
     .carousel-caption {
         max-width: 1500px;
@@ -560,5 +693,30 @@ p {font-size: 16px;}
         padding: 20px; 
         margin-right: 25px;
         background-color:rgba(255,255,255,.5);
+    }
+    .banner-text h2 {
+        font-size: 3rem;
+    }
+    .banner-text p {
+        font-size: 2rem;
+    }
+    section:nth-child(1) p {
+        font-size: 2rem;
+    }
+    .navbar {
+        font-size: 24px;
+        letter-spacing: 3px;
+    }
+    .bg-1 {
+        padding: 30px;
+    }
+    .site-footer
+    {
+        font-size:25px;
+        line-height:34px;
+    }
+    .site-footer h6
+    {
+        font-size:26px;
     }
 }
