@@ -36,11 +36,14 @@ var MEDSCHOOLS = (function () {
         'text': `
             <p>Teach them the core concepts to reach financial independence with:</p>
             <ul>
-            <li>strategies to attack student loans during and after residency, o housing plans and options for residency and beyond</li>
-            <li>cost of living differences between cities and net worth impact o investment strategies such as diversification, compounding interest, dollar cost averaging</li>
+            <li>strategies to attack student loans during and after residency</li>
+            <li>housing plans and options for residency and beyond</li>
+            <li>cost of living differences between cities and net worth impact</li>
+            <li>investment strategies such as diversification, compounding interest, dollar cost averaging</li>
             <li>translating differences between 401(k), 403(b), 457(b), IRA, Roth, HSA and brokerage accounts</li>
             <li>minimizing taxes</li>
-            <li>understanding life insurance-not from a salesperson o how stocks, bonds and mutual funds work</li>
+            <li>understanding life insurance-not from a salesperson</li>
+            <li>how stocks, bonds and mutual funds work</li>
             <li>hands-on calculator workshop</li>
             <li>lessons on depreciating assets</li>
             <li>how to create a prioritized list of financial goals</li>
@@ -79,7 +82,7 @@ var MEDSCHOOLS = (function () {
                         </div>
                         <div class="card col-xl-7">
                             <div class="card ms-card1-image">
-                                <img class="card-img-top" src="` + cards_1.img + `" alt="Card image">
+                                <img class="card-img-top" src="` + cards_1.img + `" alt="Top down view of study group">
                             </div>
                         </div>
                     </div>
@@ -92,7 +95,7 @@ var MEDSCHOOLS = (function () {
                     <div class="row align-items-center">
                     <div class="card col-xl-7">
                         <div class="card ms-card2-image">
-                            <img class="card-img-top" src="` + cards_2.img + `" alt="Card image">
+                            <img class="card-img-top" src="` + cards_2.img + `" alt="Calulator and stethascope">
                         </div>
                     </div>
                         <div class="card col-xl-5" >
@@ -111,7 +114,7 @@ var MEDSCHOOLS = (function () {
                     <div class="row align-items-center">
                     <div class="card col-xl-7">
                         <div class="card ms-card3-image">
-                            <img class="card-img-top" src="` + cards_3.img + `" alt="Card image">
+                            <img class="card-img-top" src="` + cards_3.img + `" alt="Smiling students in class">
                         </div>
                     </div>
                         <div class="card col-xl-5" >
@@ -136,7 +139,7 @@ var MEDSCHOOLS = (function () {
                         </div>
                         <div class="card col-xl-5">
                             <div class="card ms-card4-image">
-                                <img class="card-img-top" src="` + cards_4.img + `" alt="Card image">
+                                <img class="card-img-top" src="` + cards_4.img + `" alt="Jen presenting to a class">
                             </div>
                         </div>
                         
@@ -156,7 +159,7 @@ var MEDSCHOOLS = (function () {
                         </div>
                         <div class="card col-xl-7">
                             <div class="card ms-card5-image">
-                                <img class="card-img-top" src="` + cards_5.img + `" alt="Card image">
+                                <img class="card-img-top" src="` + cards_5.img + `" alt="Doctors and nurse viewing monitor">
                             </div>
                         </div>
                         
@@ -176,7 +179,7 @@ var MEDSCHOOLS = (function () {
                         </div>
                         <div class="card col-xl-6">
                             <div class="card ms-card6-image">
-                                <img class="card-img-top" src="` + cards_6.img + `" alt="Card image">
+                                <img class="card-img-top" src="` + cards_6.img + `" alt="Group of smiling doctors">
                             </div>
                         </div>
                         
