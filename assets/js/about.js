@@ -11,7 +11,7 @@ var ABOUT = (function () {
         <p>She has educated over 20,000 people in 30 different states on money and investing. For the last 10 years, she has individually counseled physicians, attorneys, pharmacists, nurse practitioners, and other high-income earners while working for the nation’s second largest retirement plan provider. She’s a licensed attorney and registered investment advisor.</p>
         <p>Her knowledge goes beyond stocks and bonds. She’s also been an occasional real estate investor, restauranteur, summer resort owner and entrepreneur. But her best investment has been in her family, including her husband Chad and their two financially savvy kids.</p> 
         `,
-        'img': "./assets/images/content/aboutImg.jpeg"
+        'img': "./assets/images/content/aboutImg_1024x731.jpeg"
     };
 
     function change_about_content() {        
@@ -31,20 +31,20 @@ var ABOUT = (function () {
                 <wrapper>
                     <section><span>` + cards_1.text + `</span></section>
                     <section><span></span></section>
-                    <section><span></span></section>
+                    <section class="responsive"><span></span></section>
                 </wrapper>
             </main>
         `;
         big_about_content = 
         `
             <div class="container-fluid">
-                <div class="row min-vh-100">
-                    <div class="col-xl-7" style="border:1px solid #323132; background-color:#c0bba0; padding:25px;">
+                <div class="row">
+                    <div class="col-xl-7 about-text">
                         <span>` + cards_1.text + `</span>
                     </div>
                     <div class="col-xl-5"">
                         <div class="row align-items-bottom">
-                            <img src="` + cards_1.img + `" alt="Close up photo of Jennifer">
+                            <img id="jenAboutPhoto" src="` + cards_1.img + `" alt="Close up photo of Jennifer">
                         </div>
                     </div>
                 </div>

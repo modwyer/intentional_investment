@@ -85,7 +85,7 @@ var HOSPITALS = (function () {
                         </div>
                         <div class="card col-xl-7">
                             <div class="card hosp-card1-image">
-                                <img class="card-img-top" src="` + cards_1.img + `" alt="Card image">
+                                <img class="card-img-top" src="` + cards_1.img + `" alt="Young male doctor rubbing the bridge of his nose">
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ var HOSPITALS = (function () {
                     <div class="row align-items-center">
                     <div class="card col-xl-7">
                         <div class="card hosp-card2-image">
-                            <img class="card-img-top" src="` + cards_2.img + `" alt="Card image">
+                            <img class="card-img-top" src="` + cards_2.img + `" alt="Calculator and stethascope">
                         </div>
                     </div>
                         <div class="card col-xl-5" >
@@ -123,7 +123,7 @@ var HOSPITALS = (function () {
                     </div>
                     <div class="card col-xl-5">
                         <div class="card hosp-card3-image">
-                            <img class="card-img-top" src="` + cards_3.img + `" alt="Card image">
+                            <img class="card-img-top" src="` + cards_3.img + `" alt="Doctors and nurse looking at monitor">
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@ var HOSPITALS = (function () {
                     <div class="row align-items-center">
                     <div class="card col-xl-7">
                         <div class="card hosp-card4-image">
-                            <img class="card-img-top" src="` + cards_4.img + `" alt="Card image">
+                            <img class="card-img-top" src="` + cards_4.img + `" alt="Hands fanning out twenty dollar bills">
                         </div>
                     </div>
                         <div class="card col-xl-5" >
@@ -161,7 +161,7 @@ var HOSPITALS = (function () {
                     </div>
                     <div class="card col-xl-6">
                         <div class="card hosp-card5-image">
-                            <img class="card-img-top" src="` + cards_5.img + `" alt="Card image">
+                            <img class="card-img-top" src="` + cards_5.img + `" alt="Jen presenting on stage">
                         </div>
                     </div>
                 </div>
