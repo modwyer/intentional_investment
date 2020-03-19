@@ -35,7 +35,7 @@ var HOME = (function () {
                         </div>
                         <div class="card col-xl-7">
                             <div class="card card-image1">
-                                <img class="card-img-top" src="` + cards_1.img + `" alt="Card image">
+                                <img class="card-img-top" src="` + cards_1.img + `" alt="Jen at whiteboard writing">
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@ var HOME = (function () {
                     <div class="row align-items-center min-vh-100">
                         <div class="card mx-auto col-xl-5 card-image2">
                             <div class="card">
-                                <img class="card-img-top" src="` + cards_2.img + `" alt="Card image">
+                                <img class="card-img-top" src="` + cards_2.img + `" alt="Doctors and nurse viewing laptop">
                             </div>
                         </div>
                         <div class="container-fluid card-group">
@@ -89,7 +89,7 @@ var HOME = (function () {
                     <div class="card mb-3 text-white bg-dark">
                         <div class="row no-gutters">
                             <div class="col-xl-4 hc4-img">
-                                <img src="` + cards_4.img + `" class="card-img" alt="Card image">
+                                <img src="` + cards_4.img + `" class="card-img" alt="Typewriter - your money starts here">
                             </div>
                             <div class="col-xl-8">
                                 <div class="card-body hc4-body">
