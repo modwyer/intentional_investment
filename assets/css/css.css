@@ -12,13 +12,16 @@ p {font-size: 16px;}
 .margin {margin-bottom: 45px;}
 .bg-1 {
     background-color: #323132;
-    padding-left: 10px;
+    padding: 30px 20px 30px 30px;
 }
 .card {
     border: none;
 }
+.card-1 {
+    margin-top: 25px;
+}
 .ms-card1 {
-    margin-top: 20px;
+    margin-top: 20px;    
 }
 .hc1-title {
     padding-bottom: 30px;
@@ -46,6 +49,7 @@ p {font-size: 16px;}
 }
 .card-2 {
     margin-top: 50px;
+    padding: 10px;
 }
 .rev-card2 {
     margin: 25px 0 25px 0;
@@ -70,7 +74,7 @@ p {font-size: 16px;}
 } 
 .hc2-title {
     margin-top: 20px;
-    margin-bottom: -25px;
+    /* margin-bottom: -25px; */
 }
 .card-3 {
     margin-top: 50px;
@@ -333,11 +337,29 @@ p {font-size: 16px;}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .ms-card1-text{
+        color: red;
+        border: 1px solid red;
+    }
+    .hc1-title {
+        margin: 25px 0 0 0;
+        font-size: 1.25rem;
+    }
+    .hc1-text p {
+        font-size: .7em;
+    }
     .card-image2 {
         margin: 50px 0 50px 0;
     }
     .ms-card3-image {
         margin: 50px 0 50px 0;
+    }
+    .hc2-title {
+        margin: 25px 0 15px 0;
+        font-size: 1.25rem;
+    }
+    .hc2-text p {
+        font-size: .7em;
     }
     .hc3-row1 {
         padding-left: 100px;
@@ -402,26 +424,30 @@ p {font-size: 16px;}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    .ms-card1-text{
+        color: pink;
+    }
     .hc1-title {
         margin-top: 50px;
     }
-    .card-text1 {
+    .hc1-text {
         margin-bottom: 50px;
     }
     .card-2 {
-        margin: 25px 0 75px 0;
+        margin: 25px 0 75px 0px;
     } 
     .hc2-title {
+        color: pink;
         margin: 25px 0;
-        padding: 0px 0px 0px 175px;
+        /* padding: 0px 0px 0px 175px; */
     }
     .hc2-text {
-        padding: 20px 100px 0px 20px;
+        padding: 20px 0px 0px 20px;
     }
     .ms-card3-image {
         margin-bottom: 50px;
     }
-    .card-4 {
+    .card-3 {
         max-width: 100%;
         height: auto;
         margin-top: 100px;
@@ -479,8 +505,15 @@ p {font-size: 16px;}
 }
 
 @media (max-width: 1024px) and (max-height: 1366) {
+    .ms-card1-text {
+        color: purple;
+        border: 1px solid purple;
+    }
     .card-image2 {
         margin: 50px 0 50px 0;
+    }
+    .hc4-img {
+        border: 5px solid white;
     }
     .ms-card3-image {
         margin: 50px 0 50px 0;
@@ -521,9 +554,13 @@ p {font-size: 16px;}
 
 /* Extra large devices (large desktops, 1921px and up) */
 @media (min-width: 1921px) {
+    .ms-card1-text {
+        color: green;
+        border: 1px solid green;
+    }
     h1 {font-size:3rem;}
     h2 {font-size:3rem;}
-    .card-text1 p {
+    .hc1-text p {
         font-size: 2rem;
     }
     .hc2-title {
@@ -531,7 +568,7 @@ p {font-size: 16px;}
         padding: 0 0 0 500px;
     }
     .hc2-text {
-        padding-right: 250px;
+        /* padding-right: 250px; */
     }
     .ms-card1 p {
         font-size: 2rem;
@@ -641,8 +678,8 @@ p {font-size: 16px;}
     .hc3-row2 {
         padding-right: 450px;
     }
-    .card-4 {
-        padding: 0;
+    .card-3 {
+        padding-top: 0px;
     }
     .ms-card4 p {
         font-size: 2rem;
@@ -660,7 +697,7 @@ p {font-size: 16px;}
         padding: 0px 50px 0 40px;
     }
     .hc4-body {
-        padding: 50px 50px 0 50px;
+        padding: 75px 75px 0 75px;
     }
     .hc4-body p {
         font-size: 2rem;

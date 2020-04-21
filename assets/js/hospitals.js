@@ -76,14 +76,14 @@ var HOSPITALS = (function () {
         'create_cards_1': function() {
             return `
                 <div class="container-fluid card-group hosp-card1">
-                    <div class="row align-items-center">
-                        <div class="card col-xl-5" >
+                    <div class="row align-items-center min-vh-100">
+                        <div class="card col-sm-5" >
                             <div class="card-body">
                                 <h2 class="card-title hosp-card1-title">` + cards_1.title + `</h2>
                                 <span class="card-text hosp-card1-text">` + cards_1.text + `</span>
                             </div>
                         </div>
-                        <div class="card col-xl-7">
+                        <div class="card col-sm-7">
                             <div class="card hosp-card1-image">
                                 <img class="card-img-top" src="` + cards_1.img + `" alt="Young male doctor rubbing the bridge of his nose">
                             </div>
@@ -95,13 +95,13 @@ var HOSPITALS = (function () {
         'create_cards_2': function() {
             return `
                 <div class="container-fluid card-group hosp-card2">
-                    <div class="row align-items-center">
-                    <div class="card col-xl-7">
+                    <div class="row align-items-center min-vh-100">
+                    <div class="card col-sm-7">
                         <div class="card hosp-card2-image">
                             <img class="card-img-top" src="` + cards_2.img + `" alt="Calculator and stethascope">
                         </div>
                     </div>
-                        <div class="card col-xl-5" >
+                        <div class="card col-sm-5" >
                             <div class="card-body">
                                 <h2 class="card-title hosp-card2-title">` + cards_2.title + `</h2>
                                 <span class="card-text hosp-card2-text">` + cards_2.text + `</span>
@@ -114,14 +114,14 @@ var HOSPITALS = (function () {
         'create_cards_3': function() {
             return `
             <div class="container-fluid card-group hosp-card3">
-                <div class="row align-items-center">
-                    <div class="card col-xl-7" >
+                <div class="row align-items-center min-vh-100">
+                    <div class="card col-sm-7" >
                         <div class="card-body">
                             <h2 class="card-title hosp-card3-title">` + cards_3.title + `</h2>
                             <span class="card-text hosp-card3-text">` + cards_3.text + `</span>
                         </div>
                     </div>
-                    <div class="card col-xl-5">
+                    <div class="card col-sm-5">
                         <div class="card hosp-card3-image">
                             <img class="card-img-top" src="` + cards_3.img + `" alt="Doctors and nurse looking at monitor">
                         </div>
@@ -133,13 +133,13 @@ var HOSPITALS = (function () {
         'create_cards_4': function() {
             return `
                 <div class="container-fluid card-group hosp-card4">
-                    <div class="row align-items-center">
-                    <div class="card col-xl-7">
+                    <div class="row align-items-center min-vh-100">
+                    <div class="card col-sm-7">
                         <div class="card hosp-card4-image">
                             <img class="card-img-top" src="` + cards_4.img + `" alt="Hands fanning out twenty dollar bills">
                         </div>
                     </div>
-                        <div class="card col-xl-5" >
+                        <div class="card col-sm-5" >
                             <div class="card-body">
                                 <h2 class="card-title hosp-card4-title">` + cards_4.title + `</h2>
                                 <span class="card-text hosp-card4-text">` + cards_4.text + `</span>
@@ -152,14 +152,14 @@ var HOSPITALS = (function () {
         'create_cards_5': function() {
             return `
             <div class="container-fluid card-group hosp-card5">
-                <div class="row align-items-center">
-                    <div class="card col-xl-6" >
+                <div class="row align-items-center min-vh-100">
+                    <div class="card col-sm-6" >
                         <div class="card-body">
                             <h2 class="card-title hosp-card5-title">` + cards_5.title + `</h2>
                             <span class="card-text hosp-card5-text">` + cards_5.text + `</span>
                         </div>
                     </div>
-                    <div class="card col-xl-6">
+                    <div class="card col-sm-6">
                         <div class="card hosp-card5-image">
                             <img class="card-img-top" src="` + cards_5.img + `" alt="Jen presenting on stage">
                         </div>

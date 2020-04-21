@@ -60,10 +60,15 @@ var ABOUT = (function () {
         }
     }
 
+    function screen_size_changed() {
+        // Perform any action as a result of a screen size change
+        change_about_content();
+    }
+
 	return {
         init: init,
-        change_about_content: change_about_content,
-        get_content: get_content
+        get_content: get_content,
+        screen_size_changed: screen_size_changed
     };
 
 }());
