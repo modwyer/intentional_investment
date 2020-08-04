@@ -5,6 +5,7 @@ var MAIN = (function () {
         CAROUSEL.init();
         MEDSCHOOLS.init();
         HOSPITALS.init();
+        LAWSCHOOLS.init();
         ROUTER.init();
         ABOUT.init();
         REVIEWS.init();
