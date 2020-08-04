@@ -2,7 +2,6 @@ var HOSPITALS = (function () {
     var cards = '';
     var banner = '';
 
-    // CARDS GROUP 1
     var cards_1 = {
         'title': "One out of every two physicians suffer from burnout.",
         'text': `<p>The issue of physician burnout may feel so overwhelming that it appears that nothing can be done.</p>
@@ -11,14 +10,12 @@ var HOSPITALS = (function () {
         <p>A big reason: Money.</p>`,
         'img': "./assets/images/content/burntoutDoctor.jpeg"
     };
-    // CARDS GROUP 2
     var cards_2 = {
         'title': "A simple solution",
         'text': `<p>Make young physicians financially fluent. Teach them how money works.</p>
         <p>Financial Independence happens when <b>assets</b> generate enough <b>passive income</b> to <b>cover annual expenses</b>. Reaching Financial Independence means working becomes a choice, not a requirement. That freedom may be the ultimate goal to stop the stress of physician burnout.</p>`,
         'img': "./assets/images/content/calculator.jpeg"
     };
-    // CARDS GROUP 3
     var cards_3 = {
         'title': "Both an ethical duty and a fiscally responsible choice for hospitals",
         'text': `
@@ -33,9 +30,8 @@ var HOSPITALS = (function () {
         <p><u>Culture and values.</u> Investing in financial education shows you care about the physician’s financial well-being, not just the bottom line.
         <p><u>Building Community.</u> Group seminars on financial education can open the conversation about how money works. Give them the dialogue they need to have positive conversations with peers. Positive financial actions are contagious.</p>
         `,
-        'img': "./assets/images/content/docsMonitor.jpeg"
+        'img': "./assets/images/content/doctors.jpeg"
     };
-    // CARDS GROUP 4
     var cards_4 = {
         'title': "Be wary of “Financial Advisors” paid on commission",
         'text': `
@@ -45,7 +41,6 @@ var HOSPITALS = (function () {
         `,
         'img': "./assets/images/content/money.jpeg"
     };
-    // CARDS GROUP 5
     var cards_5 = {
         'title': "A Framework",
         'text': `
@@ -61,7 +56,6 @@ var HOSPITALS = (function () {
         `,
         'img': "./assets/images/content/jenStage.jpeg"
     };
-    // CARDS GROUP 6
     var cards_6 = {
         'title': "Get In Touch",
         'text': `
