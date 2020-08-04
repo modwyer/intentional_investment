@@ -3,7 +3,7 @@ var ROUTER = (function () {
     var m_banner_id = "banner";
     var m_navLink_id = "";
     var m_pageName = "main";
-    var m_navlink_ids = [ 'home_link', 'medSchools_link', 'hospitals_link', 'calculator_link', 'about_link', 'reviews_link' ];
+    var m_navlink_ids = [ 'home_link', 'medSchools_link', 'hospitals_link', 'lawSchools_link', 'calculator_link', 'about_link', 'reviews_link' ];
 
     $(window).on('hashchange', function(){
         route(decodeURI(window.location.hash));
@@ -26,6 +26,9 @@ var ROUTER = (function () {
             },
             '#Hospitals': function() {
                 m_pageName = "hospitals";
+            },
+            '#LawSchools': function() {
+                m_pageName = "lawSchools";
             },
             '#Calculator': function() {
                 m_pageName = "calculator";
@@ -71,6 +74,10 @@ var ROUTER = (function () {
             case 'hospitals':
                 banner_content = HOSPITALS.get_banner();
                 cards_content = HOSPITALS.get_cards();
+                break;
+            case 'lawSchools':
+                banner_content = "";
+                cards_content = LAWSCHOOLS.get_cards();
                 break;
             default:
                 banner_content = CAROUSEL.get_carousel();

@@ -124,7 +124,6 @@ var HOME = (function () {
     }
 
     function adjust_card_height() {
-        alert("adjust vw");
         let media_param = "(min-width: 768px)";
         SHARED.adjust_min_vh_100_class(card_id_list, media_param);
     }
