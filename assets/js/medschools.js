@@ -1,6 +1,7 @@
 var MEDSCHOOLS = (function () {
     var cards = '';
     var banner = '';
+    var card_id_list = [ 'card_1', 'card_2', 'card_3', 'card_4', 'card_5', 'card_6' ];
 
     var cards_1 = {
         'title': "High Debt + High Salary = Serious need for education",
@@ -73,14 +74,15 @@ var MEDSCHOOLS = (function () {
         'create_cards_1': function() {
             return `
                 <div class="container-fluid card-group ms-card1">
-                    <div class="row align-items-center">
-                        <div class="card col-xl-5" >
+                    <div id="card_1" class="row align-items-center min-vh-100">
+                        <div class="card col-sm-5" >
+                            <div class="card-highlight" />
                             <div class="card-body">
                                 <h2 class="card-title ms-card1-title">` + cards_1.title + `</h2>
                                 <span class="card-text ms-card1-text">` + cards_1.text + `</span>
                             </div>
                         </div>
-                        <div class="card col-xl-7">
+                        <div class="card col-sm-7">
                             <div class="card ms-card1-image">
                                 <img class="card-img-top" src="` + cards_1.img + `" alt="Top down view of study group">
                             </div>
@@ -92,13 +94,14 @@ var MEDSCHOOLS = (function () {
         'create_cards_2': function() {
             return `
                 <div class="container-fluid card-group ms-card2">
-                    <div class="row align-items-center">
-                    <div class="card col-xl-7">
+                    <div id="card_2" class="row align-items-center min-vh-100">
+                    <div class="card col-sm-7">
                         <div class="card ms-card2-image">
                             <img class="card-img-top" src="` + cards_2.img + `" alt="Calulator and stethascope">
                         </div>
                     </div>
-                        <div class="card col-xl-5" >
+                        <div class="card col-sm-5" >
+                            <div class="card-highlight" />
                             <div class="card-body">
                                 <h2 class="card-title ms-card2-title">` + cards_2.title + `</h2>
                                 <span class="card-text ms-card2-text">` + cards_2.text + `</span>
@@ -111,13 +114,14 @@ var MEDSCHOOLS = (function () {
         'create_cards_3': function() {
             return `
                 <div class="container-fluid card-group ms-card3">
-                    <div class="row align-items-center">
-                    <div class="card col-xl-7">
+                    <div id="card_3" class="row align-items-center min-vh-100">
+                    <div class="card col-sm-7">
                         <div class="card ms-card3-image">
                             <img class="card-img-top" src="` + cards_3.img + `" alt="Smiling students in class">
                         </div>
                     </div>
-                        <div class="card col-xl-5" >
+                        <div class="card col-sm-5" >
+                            <div class="card-highlight" />
                             <div class="card-body">
                                 <h2 class="card-title ms-card3-title">` + cards_3.title + `</h2>
                                 <span class="card-text ms-card3-text">` + cards_3.text + `</span>
@@ -130,14 +134,15 @@ var MEDSCHOOLS = (function () {
         'create_cards_4': function() {
             return `
                 <div class="container-fluid card-group ms-card4">
-                    <div class="row align-items-center">
-                        <div class="card col-xl-7" >
+                    <div id="card_4" class="row align-items-center min-vh-100">
+                        <div class="card col-sm-7" >
+                            <div class="card-highlight" />
                             <div class="card-body">
                                 <h2 class="card-title ms-card4-title">` + cards_4.title + `</h2>
                                 <span class="card-text ms-card4-text">` + cards_4.text + `</span>
                             </div>
                         </div>
-                        <div class="card col-xl-5">
+                        <div class="card col-sm-5">
                             <div class="card ms-card4-image">
                                 <img class="card-img-top" src="` + cards_4.img + `" alt="Jen presenting to a class">
                             </div>
@@ -150,14 +155,15 @@ var MEDSCHOOLS = (function () {
         'create_cards_5': function() {
             return `
                 <div class="container-fluid card-group ms-card5">
-                    <div class="row align-items-center">
-                        <div class="card col-xl-5" >
+                    <div id="card_5" class="row align-items-center min-vh-100">
+                        <div class="card col-sm-5" >
+                            <div class="card-highlight" />
                             <div class="card-body">
                                 <h2 class="card-title ms-card5-title">` + cards_5.title + `</h2>
                                 <span class="card-text ms-card5-text">` + cards_5.text + `</span>
                             </div>
                         </div>
-                        <div class="card col-xl-7">
+                        <div class="card col-sm-7">
                             <div class="card ms-card5-image">
                                 <img class="card-img-top" src="` + cards_5.img + `" alt="Doctors and nurse viewing monitor">
                             </div>
@@ -170,14 +176,15 @@ var MEDSCHOOLS = (function () {
         'create_cards_6': function() {
             return `
                 <div class="container-fluid card-group ms-card6">
-                    <div class="row align-items-center">
-                        <div class="card col-xl-6" >
+                    <div id="card_6" class="row align-items-center min-vh-100">
+                        <div class="card col-sm-6">
+                            <div class="card-highlight" />
                             <div class="card-body">
                                 <h2 class="card-title ms-card6-title">` + cards_6.title + `</h2>
                                 <span class="card-text ms-card6-text">` + cards_6.text + `</span>
                             </div>
                         </div>
-                        <div class="card col-xl-6">
+                        <div class="card col-sm-6">
                             <div class="card ms-card6-image">
                                 <img class="card-img-top" src="` + cards_6.img + `" alt="Group of smiling doctors">
                             </div>
@@ -224,6 +231,16 @@ var MEDSCHOOLS = (function () {
         return cards;
     }
 
+    function adjust_card_height() {
+        let media_param = "(min-width: 768px)";
+        SHARED.adjust_min_vh_100_class(card_id_list, media_param);
+    }
+
+    function screen_size_changed() {
+        // Perform any action as a result of a screen size change
+        adjust_card_height();
+    }
+
     function init() {
         cards = generate_cards();
         banner = generate_banner();
@@ -232,7 +249,8 @@ var MEDSCHOOLS = (function () {
     return {
         init: init,
         get_cards: get_cards,
-        get_banner: get_banner
+        get_banner: get_banner,
+        screen_size_changed: screen_size_changed
     };
 
 }());

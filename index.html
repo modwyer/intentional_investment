@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/css.css">
+    <link rel="stylesheet" href="./assets/css/images.css">
 
     <link rel="shortcut icon" href="./assets/images//logos/favicon32x32.png">
     <title>Intentional Investment</title>
@@ -21,7 +23,7 @@
 
     <header class="header sticky-top">
         <nav class="navbar-expand-sm navbar-expand-md navbar-expand-xl navbar navbar-light">
-            <div class="container-fluid nav-container">
+            <div class="container-fluid p-0 nav-container">
                 <div class="navbar-header">
                   <!-- <a class="navbar-brand" href="#">Intentional Investment</a> -->
                   <a href="#" src="./assets/images/logos/ipadlogo72x72.png" class="navbar-brand responsive" style="display:inline" alt="Logo" width="42" height="42"></a>
@@ -32,25 +34,25 @@
                 <div class="collapse navbar-collapse" onclick="MAIN.menu_click()" id="nav_bar">
                   <ul class="navbar-nav text-left ml-auto">
                     <li class="nav-item">
-                        <a id="home_link" class="nav-link" href="#">HOME</a>
+                        <a id="home_link" class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a id="medSchools_link" class="nav-link" href="#MedSchools">MED SCHOOL PROGRAM</a>
+                        <a id="medSchools_link" class="nav-link" href="#MedSchools">Med School Program</a>
                     </li>
                     <li class="nav-item">
-                        <a id="hospitals_link" class="nav-link" href="#Hospitals">HOSPITALS/RESIDENCY PROGRAM</a>
+                        <a id="hospitals_link" class="nav-link" href="#Hospitals">Hospitals/Residency Program</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a id="lawschool_link" class="nav-link" href="#LawSchools">Law School Program</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a id="reviews_link" class="nav-link" href="#Reviews">Reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a id="lawschool_link" class="nav-link" href="#LawSchools">LAW SCHOOL/ASSOCIATE PROGRAM</a>
+                        <a id="calculator_link" class="nav-link" href="#Calculator">Calculator</a>
                     </li>
                     <li class="nav-item">
-                        <a id="reviews_link" class="nav-link" href="#Reviews">REVIEWS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="calculator_link" class="nav-link" href="#Calculator">CALCULATOR</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="about_link" class="nav-link" href="#About">ABOUT</a>
+                        <a id="about_link" class="nav-link" href="#About">About</a>
                     </li>
                 </ul>
                 </div>
@@ -64,20 +66,37 @@
       <div id="cards"></div>
 <!-- Site footer -->
 <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-xl-12">
-          <h6>Quick Links</h6>
-          <ul class="footer-links">
-            <li><a href="#MedSchools">Med Schools</a></li>
-            <li><a href="#Hospitals">Hospitals</a></li>
-          </ul>
-          <img src="./assets/images/content/mail.svg" alt="Mail">&nbsp;jen@intentional-investment.com
+    <div class="container-fluid">
+        <div class="container-fluid"> 
+            <h6>Quick Links</h6>   
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="#MedSchools" class="btn btn-outline-light btn-block" role="button">Medical School Programs</a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#Hospitals" class="btn btn-outline-light btn-block" role="button">Hospital/Residency Programs</a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#LawSchools" class="btn btn-outline-light btn-block" role="button">Law School/Associate Programs</a>
+                </div>
+            </div>
         </div>
       </div>
-      <hr>
-      <span class="text-middle">Intentional Investment 2020</span>
+
+    <div class="container-fluid">
+        <div class="spacer20"></div>
+        <div class="spacer20"></div>
+        <div class="row">         
+            <div class="col-12">
+                <img src="./assets/images/content/mail.svg" alt="Mail">&nbsp;jen@intentional-investment.com
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <span>Intentional Investment 2020</span>
+            </div>
+        </div>
     </div>    
 </footer>
     </main>
@@ -86,6 +105,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
+    <script src="./assets/js/shared.js"></script>
     <script src="./assets/js/home.js"></script>
     <script src="./assets/js/carousel.js"></script>
     <script src="./assets/js/medschools.js"></script>
@@ -102,14 +122,39 @@
             const page_name = ROUTER.get_current_page();
             $(window).resize(function(){                
                 if (page_name === "about") { 
-                    ABOUT.change_about_content();
+                    ABOUT.screen_size_changed();
                 }
-            });             
-            var x = window.matchMedia("(min-width: 400px)")
-            if (page_name === "about") {
-                ABOUT.change_about_content(x) // Call listener function at run time
+                if (page_name === "home") {
+                    HOME.screen_size_changed();
+                }
+                if (page_name === "medSchools") {
+                    MEDSCHOOLS.screen_size_changed();
+                }
+            });
+            // On first load...
+            switch(page_name) {
+                case "about":
+                    ABOUT.screen_size_changed();
+                    break;
+                case "home":
+                    HOME.screen_size_changed();
+                    break;
+                case "medSchools":
+                    MEDSCHOOLS.screen_size_changed();
+                    break;
+                default:
+                    break;
             }
-            x.addListener(ABOUT.change_about_content) // Attach listener function on state changes 
+            // if (page_name === "about") {
+            //     ABOUT.screen_size_changed(); // Call listener function at run time
+            // }
+            // if (page_name === "home") {
+            //     HOME.screen_size_changed();
+            // }
+            // if (page_name === "medSchools") {
+            //     MEDSCHOOLS.screen_size_changed();
+            // }
+            //x.addListener(ABOUT.change_about_content); // Attach listener function on state changes 
             
         });
     </script>
