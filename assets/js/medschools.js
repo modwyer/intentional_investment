@@ -54,20 +54,12 @@ var MEDSCHOOLS = (function () {
         'img': "./assets/images/content/bwJen.jpeg"
     };
     var cards_5 = {
-        'title': "Break the Stereotype",
-        'text': `
-            <p>Help your students break the stereotype that physicians are bad with money. Disrupt the industry taboo against talking about practical finance.</p>
-            <p>Help them reach Financial Independence earlier than most physicians. Give them the power to control their financial future.</p>
-        `,
-        'img': "./assets/images/content/docsMonitor.jpeg"
-    };
-    var cards_6 = {
         'title': "Be on the leading edge",
         'text': `
             <p>Help your new physicians win the money game. Be on the leading edge of offering a well-rounded medical education.</p>
             <p>They’ll have the income they need. Give them the tools necessary to get their financial life in order, so they can devote more energy to learning and practicing good medicine.</p>
         `,
-        'img': "./assets/images/content/docGroup.jpeg"
+        'img': "./assets/images/content/docsMonitor.jpeg"
     };
 
     var create_cards_functions = {
@@ -155,7 +147,12 @@ var MEDSCHOOLS = (function () {
         'create_cards_5': function() {
             return `
                 <div class="container-fluid card-group ms-card5">
-                    <div id="card_5" class="row align-items-center min-vh-100">
+                    <div id="card_5" class="row align-items-center min-vh-100">                       
+                        <div class="card col-sm-7">
+                            <div class="card ms-card5-image">
+                                <img class="card-img-top" src="` + cards_5.img + `" alt="Doctors and nurse viewing monitor">
+                            </div>
+                        </div>
                         <div class="card col-sm-5" >
                             <div class="card-highlight" />
                             <div class="card-body">
@@ -163,33 +160,6 @@ var MEDSCHOOLS = (function () {
                                 <span class="card-text ms-card5-text">` + cards_5.text + `</span>
                             </div>
                         </div>
-                        <div class="card col-sm-7">
-                            <div class="card ms-card5-image">
-                                <img class="card-img-top" src="` + cards_5.img + `" alt="Doctors and nurse viewing monitor">
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            `;
-        },
-        'create_cards_6': function() {
-            return `
-                <div class="container-fluid card-group ms-card6">
-                    <div id="card_6" class="row align-items-center min-vh-100">
-                        <div class="card col-sm-6">
-                            <div class="card-highlight" />
-                            <div class="card-body">
-                                <h2 class="card-title ms-card6-title">` + cards_6.title + `</h2>
-                                <span class="card-text ms-card6-text">` + cards_6.text + `</span>
-                            </div>
-                        </div>
-                        <div class="card col-sm-6">
-                            <div class="card ms-card6-image">
-                                <img class="card-img-top" src="` + cards_6.img + `" alt="Group of smiling doctors">
-                            </div>
-                        </div>
-                        
                     </div>
                 </div>
             `;
