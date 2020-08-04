@@ -78,6 +78,7 @@ var HOSPITALS = (function () {
                 <div class="container-fluid card-group hosp-card1">
                     <div class="row align-items-center min-vh-100">
                         <div class="card col-sm-5" >
+                            <div class="card-highlight" />
                             <div class="card-body">
                                 <h2 class="card-title hosp-card1-title">` + cards_1.title + `</h2>
                                 <span class="card-text hosp-card1-text">` + cards_1.text + `</span>
@@ -102,6 +103,7 @@ var HOSPITALS = (function () {
                         </div>
                     </div>
                         <div class="card col-sm-5" >
+                            <div class="card-highlight" />
                             <div class="card-body">
                                 <h2 class="card-title hosp-card2-title">` + cards_2.title + `</h2>
                                 <span class="card-text hosp-card2-text">` + cards_2.text + `</span>
@@ -116,6 +118,7 @@ var HOSPITALS = (function () {
             <div class="container-fluid card-group hosp-card3">
                 <div class="row align-items-center min-vh-100">
                     <div class="card col-sm-7" >
+                        <div class="card-highlight" />
                         <div class="card-body">
                             <h2 class="card-title hosp-card3-title">` + cards_3.title + `</h2>
                             <span class="card-text hosp-card3-text">` + cards_3.text + `</span>
@@ -140,6 +143,7 @@ var HOSPITALS = (function () {
                         </div>
                     </div>
                         <div class="card col-sm-5" >
+                            <div class="card-highlight" />
                             <div class="card-body">
                                 <h2 class="card-title hosp-card4-title">` + cards_4.title + `</h2>
                                 <span class="card-text hosp-card4-text">` + cards_4.text + `</span>
@@ -154,6 +158,7 @@ var HOSPITALS = (function () {
             <div class="container-fluid card-group hosp-card5">
                 <div class="row align-items-center min-vh-100">
                     <div class="card col-sm-6" >
+                        <div class="card-highlight" />
                         <div class="card-body">
                             <h2 class="card-title hosp-card5-title">` + cards_5.title + `</h2>
                             <span class="card-text hosp-card5-text">` + cards_5.text + `</span>

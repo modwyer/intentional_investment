@@ -76,6 +76,7 @@ var MEDSCHOOLS = (function () {
                 <div class="container-fluid card-group ms-card1">
                     <div id="card_1" class="row align-items-center min-vh-100">
                         <div class="card col-sm-5" >
+                            <div class="card-highlight" />
                             <div class="card-body">
                                 <h2 class="card-title ms-card1-title">` + cards_1.title + `</h2>
                                 <span class="card-text ms-card1-text">` + cards_1.text + `</span>
@@ -100,6 +101,7 @@ var MEDSCHOOLS = (function () {
                         </div>
                     </div>
                         <div class="card col-sm-5" >
+                            <div class="card-highlight" />
                             <div class="card-body">
                                 <h2 class="card-title ms-card2-title">` + cards_2.title + `</h2>
                                 <span class="card-text ms-card2-text">` + cards_2.text + `</span>
@@ -119,6 +121,7 @@ var MEDSCHOOLS = (function () {
                         </div>
                     </div>
                         <div class="card col-sm-5" >
+                            <div class="card-highlight" />
                             <div class="card-body">
                                 <h2 class="card-title ms-card3-title">` + cards_3.title + `</h2>
                                 <span class="card-text ms-card3-text">` + cards_3.text + `</span>
@@ -133,6 +136,7 @@ var MEDSCHOOLS = (function () {
                 <div class="container-fluid card-group ms-card4">
                     <div id="card_4" class="row align-items-center min-vh-100">
                         <div class="card col-sm-7" >
+                            <div class="card-highlight" />
                             <div class="card-body">
                                 <h2 class="card-title ms-card4-title">` + cards_4.title + `</h2>
                                 <span class="card-text ms-card4-text">` + cards_4.text + `</span>
@@ -153,6 +157,7 @@ var MEDSCHOOLS = (function () {
                 <div class="container-fluid card-group ms-card5">
                     <div id="card_5" class="row align-items-center min-vh-100">
                         <div class="card col-sm-5" >
+                            <div class="card-highlight" />
                             <div class="card-body">
                                 <h2 class="card-title ms-card5-title">` + cards_5.title + `</h2>
                                 <span class="card-text ms-card5-text">` + cards_5.text + `</span>
@@ -172,7 +177,8 @@ var MEDSCHOOLS = (function () {
             return `
                 <div class="container-fluid card-group ms-card6">
                     <div id="card_6" class="row align-items-center min-vh-100">
-                        <div class="card col-sm-6" >
+                        <div class="card col-sm-6">
+                            <div class="card-highlight" />
                             <div class="card-body">
                                 <h2 class="card-title ms-card6-title">` + cards_6.title + `</h2>
                                 <span class="card-text ms-card6-text">` + cards_6.text + `</span>

@@ -36,9 +36,9 @@ var REVIEWS = (function () {
     var cards_4 = {
         'title': '<b>Feedback from Seminar Attendees:  Medical Residents and Medical Students</b>',
         'text': `
-            <ul>
+            <ul class="nobull customUL">
                 <li>Thank you so much!  Investments made simple & digestible in a very short period of time.  My only regret is that I did not have the opportunity to connect with Jennifer in my 20s-30s! Again thank you! Brilliant!  --Dr Irene Carr</li>
-
+                
                 <li>Fantastic Presentation!  This presentation should be required curriculum for all residents. Thank you so much! –Dr Trevor Washburn</li>
                 
                 <li>Knowing the basics of financial planning was an eye opener, and an enriching experience.  Very empowering!  --Dr Preeti Banga</li>
@@ -107,7 +107,7 @@ var REVIEWS = (function () {
         },
         'create_cards_2': function() {
             return `
-                <div class="container-fluid card-group rev-card2">
+            <hr/><div class="container-fluid card-group rev-card2">
                     <div class="row align-items-center">
                         <div class="card col-xl-7">
                             <div class="card rev-card2-image">
@@ -125,7 +125,7 @@ var REVIEWS = (function () {
         },
         'create_cards_3': function() {
             return `
-                <div class="container-fluid card-group rev-card3">
+            <hr/><div class="container-fluid card-group rev-card3">
                     <div class="row align-items-center">
                         <div class="card col-xl-4">
                             <div class="card rev-card3-image">
@@ -143,7 +143,7 @@ var REVIEWS = (function () {
         },
         'create_cards_4': function() {
             return `
-                <div class="container-fluid card-group rev-card4">
+                <hr/><div class="container-fluid card-group rev-card4">
                     <div class="row align-items-center">
                         <div class="card col-xl-12" >
                             <div class="card-body">

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/css.css">
@@ -65,20 +66,37 @@
       <div id="cards"></div>
 <!-- Site footer -->
 <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-xl-12">
-          <h6>Quick Links</h6>
-          <ul class="footer-links">
-            <li><a href="#MedSchools">Med Schools</a></li>
-            <li><a href="#Hospitals">Hospitals</a></li>
-          </ul>
-          <img src="./assets/images/content/mail.svg" alt="Mail">&nbsp;jen@intentional-investment.com
+    <div class="container-fluid">
+        <div class="container-fluid"> 
+            <h6>Quick Links</h6>   
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="#MedSchools" class="btn btn-outline-light btn-block" role="button">Medical School Programs</a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#Hospitals" class="btn btn-outline-light btn-block" role="button">Hospital/Residency Programs</a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#LawSchools" class="btn btn-outline-light btn-block" role="button">Law School/Associate Programs</a>
+                </div>
+            </div>
         </div>
       </div>
-      <hr>
-      <span class="text-middle">Intentional Investment 2020</span>
+
+    <div class="container-fluid">
+        <div class="spacer20"></div>
+        <div class="spacer20"></div>
+        <div class="row">         
+            <div class="col-12">
+                <img src="./assets/images/content/mail.svg" alt="Mail">&nbsp;jen@intentional-investment.com
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <span>Intentional Investment 2020</span>
+            </div>
+        </div>
     </div>    
 </footer>
     </main>
@@ -113,8 +131,7 @@
                     MEDSCHOOLS.screen_size_changed();
                 }
             });
-            // On first load...  
-            
+            // On first load...
             switch(page_name) {
                 case "about":
                     ABOUT.screen_size_changed();
