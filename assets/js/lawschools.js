@@ -23,7 +23,7 @@ var LAWSCHOOLS = (function () {
             return `
             </br></br>
             <div class="row">
-            <div class="col-12 d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center min-vh-100">
             <span>Coming soon...</span>
             </div>
             </div>
@@ -56,13 +56,13 @@ var LAWSCHOOLS = (function () {
     }
 
     function adjust_card_height() {
-        let media_param = "(min-width: 768px)";
+        let media_param = "only screen and (max-width: 1366px)";
         SHARED.adjust_min_vh_100_class(card_id_list, media_param);
     }
 
     function screen_size_changed() {
         // Perform any action as a result of a screen size change
-        adjust_card_height();
+        //adjust_card_height();
     }
 
     function init() {

@@ -1,9 +1,10 @@
 var HOSPITALS = (function () {
     var cards = '';
     var banner = '';
+    var card_id_list = [ 'card_1', 'card_2', 'card_3', 'card_4', 'card_5', 'card_6' ];
 
     var cards_1 = {
-        'title': "One out of every two physicians suffer from burnout.",
+        'title': `<div class="citation-link">One out of every two physicians suffer from burnout. <a href="#About-citations">(1)</a></div>`,
         'text': `<p>The issue of physician burnout may feel so overwhelming that it appears that nothing can be done.</p>
         <p>It’s causing decreased productivity, lower quality of care, substance abuse, and emotional exhaustion.</p>
         <p>Ironically, physicians are burnt out but working longer.</p> 
@@ -17,7 +18,7 @@ var HOSPITALS = (function () {
         'img': "./assets/images/content/calculator.jpeg"
     };
     var cards_3 = {
-        'title': "Both an ethical duty and a fiscally responsible choice for hospitals",
+        'title': `<div class="citation-link">Both an ethical duty and a fiscally responsible choice for hospitals <a href="#About-citations">(4)</a></div>`,
         'text': `
         <p>There is a business case for reducing physician burnout: </p>
         <ul>
@@ -44,8 +45,8 @@ var HOSPITALS = (function () {
     var cards_5 = {
         'title': "A Framework",
         'text': `
-        <p>A successful framework is easier to implement than you may think. As little as 10 hours of financial education can change the course of a person’s financial life. (USDAlink)</p>
-        <p>Three points in a physician’s education where these lessons are most valuable:</p>
+        <p>A successful framework is easier to implement than you may think. As little as 10 hours of financial education can change the course of a person’s financial life.</p>
+        <div class="citation-link"><p>Three points in a physician’s education where these lessons are most valuable: <a href="#About-citations">(2)</a></p></div>
         <ol>
         <li>The end of medical school</li>
         <li>The end of residency</li>
@@ -70,7 +71,7 @@ var HOSPITALS = (function () {
         'create_cards_1': function() {
             return `
                 <div class="container-fluid card-group hosp-card1">
-                    <div class="row align-items-center min-vh-100">
+                    <div class="row align-items-center">
                         <div class="card col-sm-5" >
                             <div class="card-highlight" />
                             <div class="card-body">
@@ -90,12 +91,12 @@ var HOSPITALS = (function () {
         'create_cards_2': function() {
             return `
                 <div class="container-fluid card-group hosp-card2">
-                    <div class="row align-items-center min-vh-100">
-                    <div class="card col-sm-7">
-                        <div class="card hosp-card2-image">
-                            <img class="card-img-top" src="` + cards_2.img + `" alt="Calculator and stethascope">
+                    <div class="row align-items-center">
+                        <div class="card col-sm-7">
+                            <div class="card hosp-card2-image">
+                                <img class="card-img-top" src="` + cards_2.img + `" alt="Calculator and stethascope">
+                            </div>
                         </div>
-                    </div>
                         <div class="card col-sm-5" >
                             <div class="card-highlight" />
                             <div class="card-body">
@@ -110,7 +111,7 @@ var HOSPITALS = (function () {
         'create_cards_3': function() {
             return `
             <div class="container-fluid card-group hosp-card3">
-                <div class="row align-items-center min-vh-100">
+                <div class="row align-items-center">
                     <div class="card col-sm-7" >
                         <div class="card-highlight" />
                         <div class="card-body">
@@ -130,7 +131,7 @@ var HOSPITALS = (function () {
         'create_cards_4': function() {
             return `
                 <div class="container-fluid card-group hosp-card4">
-                    <div class="row align-items-center min-vh-100">
+                    <div class="row align-items-center">
                     <div class="card col-sm-7">
                         <div class="card hosp-card4-image">
                             <img class="card-img-top" src="` + cards_4.img + `" alt="Hands fanning out twenty dollar bills">
@@ -150,7 +151,7 @@ var HOSPITALS = (function () {
         'create_cards_5': function() {
             return `
             <div class="container-fluid card-group hosp-card5">
-                <div class="row align-items-center min-vh-100">
+                <div class="row align-items-center">
                     <div class="card col-sm-6" >
                         <div class="card-highlight" />
                         <div class="card-body">
@@ -219,6 +220,16 @@ var HOSPITALS = (function () {
         return cards;
     }
 
+    function adjust_card_height() {
+        let media_param = "only screen and (max-width: 1366px)";
+        SHARED.adjust_min_vh_100_class(card_id_list, media_param);
+    }
+
+    function screen_size_changed() {
+        // Perform any action as a result of a screen size change
+        adjust_card_height();
+    }
+
     function init() {
         cards = generate_cards();
         banner = generate_banner();
@@ -227,7 +238,8 @@ var HOSPITALS = (function () {
     return {
         init: init,
         get_cards: get_cards,
-        get_banner: get_banner
+        get_banner: get_banner,
+        screen_size_changed: screen_size_changed
     };
 
 }());

@@ -1,17 +1,19 @@
 var MEDSCHOOLS = (function () {
     var cards = '';
     var banner = '';
-    var card_id_list = [ 'card_1', 'card_2', 'card_3', 'card_4', 'card_5', 'card_6' ];
+    var card_id_list = [ 'card_1', 'card_2', 'card_3', 'card_4', 'card_5' ];
 
     var cards_1 = {
         'title': "High Debt + High Salary = Serious need for education",
         'text': `
-            <p><ul>
-            <li>33% of medical students carry >$200,000 in student debt</li>
-            <li>75% of med students reported being unprepared to handle future financial decisions (Dahle)</li>
+            <p>
+            <ul>
+            <li class="citation-link">33% of medical students carry >$200,000 in student debt <a class="scrollLink" href="#About-citations">(1)</a></li>
+            <li class="citation-link">75% of med students reported being unprepared to handle future financial decisions <a href="#About-citations">(3)</a></li>
             <li>48% of physicians consider themselves behind schedule in saving for retirement</li>
             <li>Most miss out on investing in their 20s (the best decade for compounding growth)</li>
-            </ul><p>
+            </ul>
+            <p>
         `,
         'img': "./assets/images/content/topViewTable.jpeg"
     };
@@ -66,7 +68,7 @@ var MEDSCHOOLS = (function () {
         'create_cards_1': function() {
             return `
                 <div class="container-fluid card-group ms-card1">
-                    <div id="card_1" class="row align-items-center min-vh-100">
+                    <div id="card_1" class="row align-items-center">
                         <div class="card col-sm-5" >
                             <div class="card-highlight" />
                             <div class="card-body">
@@ -86,12 +88,12 @@ var MEDSCHOOLS = (function () {
         'create_cards_2': function() {
             return `
                 <div class="container-fluid card-group ms-card2">
-                    <div id="card_2" class="row align-items-center min-vh-100">
-                    <div class="card col-sm-7">
-                        <div class="card ms-card2-image">
-                            <img class="card-img-top" src="` + cards_2.img + `" alt="Calulator and stethascope">
+                    <div id="card_2" class="row align-items-center">
+                        <div class="card col-sm-7">
+                            <div class="card ms-card2-image">
+                                <img class="card-img-top" src="` + cards_2.img + `" alt="Calulator and stethascope">
+                            </div>
                         </div>
-                    </div>
                         <div class="card col-sm-5" >
                             <div class="card-highlight" />
                             <div class="card-body">
@@ -106,7 +108,7 @@ var MEDSCHOOLS = (function () {
         'create_cards_3': function() {
             return `
                 <div class="container-fluid card-group ms-card3">
-                    <div id="card_3" class="row align-items-center min-vh-100">
+                    <div id="card_3" class="row align-items-center">
                     <div class="card col-sm-7">
                         <div class="card ms-card3-image">
                             <img class="card-img-top" src="` + cards_3.img + `" alt="Smiling students in class">
@@ -126,7 +128,7 @@ var MEDSCHOOLS = (function () {
         'create_cards_4': function() {
             return `
                 <div class="container-fluid card-group ms-card4">
-                    <div id="card_4" class="row align-items-center min-vh-100">
+                    <div id="card_4" class="row align-items-center">
                         <div class="card col-sm-7" >
                             <div class="card-highlight" />
                             <div class="card-body">
@@ -147,7 +149,7 @@ var MEDSCHOOLS = (function () {
         'create_cards_5': function() {
             return `
                 <div class="container-fluid card-group ms-card5">
-                    <div id="card_5" class="row align-items-center min-vh-100">                       
+                    <div id="card_5" class="row align-items-center">                       
                         <div class="card col-sm-7">
                             <div class="card ms-card5-image">
                                 <img class="card-img-top" src="` + cards_5.img + `" alt="Doctors and nurse viewing monitor">
@@ -202,7 +204,7 @@ var MEDSCHOOLS = (function () {
     }
 
     function adjust_card_height() {
-        let media_param = "(min-width: 768px)";
+        let media_param = "only screen and (max-width: 1366px)";
         SHARED.adjust_min_vh_100_class(card_id_list, media_param);
     }
 

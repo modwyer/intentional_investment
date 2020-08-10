@@ -13,6 +13,29 @@ var ABOUT = (function () {
         `,
         'img': "./assets/images/content/aboutImg_1024x731.jpeg"
     };
+    var cards_2 = {
+        'text':`
+        <p>
+        <div class="citations">
+        <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+        <h6 id="citations">CITATIONS AND ACADEMIC JUSTIFICATION FOR IMPLEMENTING THIS SEMINAR</h6>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-12">
+        <ol class="about-citations">
+        <li>Royce MD, Davenport MD, Dahle, MD (2019), <a href="#"><u>A Burnout Reduction and Wellness Strategy: Personal Financial Health for the Medical Trainee</u></a></li>
+        <li>Yuval Parr-Or, PhD (2015), <a href="#"><u>Empowering Physicians With Financial Literacy</u></a></li>
+        <li>Jayakumar, Larkin, Ginzberg (2017), <a href="#"><u>Personal Financial Literacy Among U.S. Medical Students</u></a></li>
+        <li>Shanafelt MD, Goh MD, Sinsky MD (2017), <a href="#"><u>The Business Case for Investing in Physician Well-being</u></a></li>
+        </ol>
+        </div>
+        </div>
+        </div>
+        </p>
+        `
+    };
 
     function change_about_content() {        
         var cards_content = "";
@@ -33,6 +56,7 @@ var ABOUT = (function () {
                     <section><span></span></section>
                     <section class="responsive"><span></span></section>
                 </wrapper>
+                <span>` + cards_2.text + `</span>
             </main>
         `;
         big_about_content = 
@@ -46,6 +70,11 @@ var ABOUT = (function () {
                         <div class="row align-items-bottom">
                             <img id="jenAboutPhoto" src="` + cards_1.img + `" alt="Close up photo of Jennifer">
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <span>` + cards_2.text + `</span>
                     </div>
                 </div>
             </div>

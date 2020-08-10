@@ -30,7 +30,7 @@ var HOME = (function () {
         'create_cards_1': function() {
             return `
                 <div class="container-fluid card-group card-1">
-                    <div id="card_1" class="row align-items-center min-vh-100">
+                    <div id="card_1" class="row align-items-center">
                         <div class="card col-sm-5" >
                             <div class="card-highlight" />
                             <div class="card-body">
@@ -50,7 +50,7 @@ var HOME = (function () {
         'create_cards_2': function() {
             return `
                 <div class="container-fluid card-group card-2">
-                    <div id="card_2" class="row align-items-center min-vh-100">
+                    <div id="card_2" class="row align-items-center">
                         <div class="card col-sm-7">
                             <div class="card card-image2">
                                 <img class="card-img-top" src="` + cards_2.img + `" alt="...">
@@ -87,24 +87,6 @@ var HOME = (function () {
             </div>
         `;
         return cards_3_alt_content;
-            // return `
-            //     <div id="home_card_3">
-            //         <div class="container-fluid card-3">
-            //             <div class="card mb-3 text-white bg-dark">
-            //                 <div class="row no-gutters">
-            //                     <div class="col-sm-6 hc4-img">
-            //                         <img src="` + cards_3.img1 + `" class="card-img" alt="Typewriter - your money starts here">
-            //                     </div>
-            //                     <div class="col-sm-6">
-            //                         <div class="card-body hc4-body">
-            //                             <span>` + cards_3.text + `</span>
-            //                         </div>
-            //                     </div>
-            //                 </div>
-            //             </div>
-            //         </div>
-            //     </div>
-            // `;
         }
     };
 
@@ -124,7 +106,7 @@ var HOME = (function () {
     }
 
     function adjust_card_height() {
-        let media_param = "(min-width: 768px)";
+        let media_param = "only screen and (max-width: 1366px)";
         SHARED.adjust_min_vh_100_class(card_id_list, media_param);
     }
 
@@ -133,12 +115,10 @@ var HOME = (function () {
         $('#home_card_3').html("" + content + "");
     }
 
-    function screen_size_changed() {
+    function screen_size_changed(callee) {
         // Perform any action as a result of a screen size change
-        adjust_card_height();
 
         if (window.matchMedia('(min-width: 768px) and (max-width: 1023px)').matches) {
-            alert("ssc: home: swap");
             var card_content = `
                 <div class="container-fluid card-3">
                     <div class="card mb-3 text-white bg-dark">
@@ -160,9 +140,10 @@ var HOME = (function () {
             swap_card_3_content(card_content);
         }
         if (window.matchMedia('(min-width: 1920px)').matches) {
-            alert("ssc: home: big swap");
             swap_card_3_content(cards_3_alt_content);
         }
+
+        adjust_card_height();
     }
 
     function init() {

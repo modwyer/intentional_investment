@@ -30,7 +30,7 @@ p {font-size: 16px;}
     padding: 30px 20px 30px 30px;
 }
 .card-highlight {
-    margin: 25px 25% 20px 20px;
+    margin: 25px 25% 0px 20px;
     border-top: 2px solid #b4a042;
 }
 .quote-separator {
@@ -40,33 +40,60 @@ p {font-size: 16px;}
 .nobull {
     list-style-type: none;
 }
-/* .card-body {
-    padding-top: 15px;
-    border-top: 2px solid #b4a042;
-} */
+.citations {
+    padding: 75px 0 25px 0;
+}
+.about-citations li {
+    font-size: 1rem;
+}
+.about-citations > li > a {
+    color: #000000;
+}
+.about-citations > li > a:hover,
+.about-citations > li > a:focus,
+.about-citations > li > a:active
+{
+    color: #b4a042;
+}
+.citation-link a {
+    color: #000000;
+    font-size: 1rem;
+}
+.citation-link a:hover,
+.citation-link a:focus,
+.citation-link a:active
+{
+    color: #b4a042;
+}
 .card {
-    border: none;
+    border: none
 }
 .card-1 {
-    margin-top: 25px;
+    padding-top: 10px;
 }
-.ms-card1 {
-    margin-top: 20px;    
+.card-image1 {
+    padding: 25px 0 25px 0;
+}
+.ms-card1-title {
+    padding-bottom: 10px;
 }
 .hc1-title {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+}
+.hc1-title, .hc2-title {
+    font-size: 1.5rem;
 }
 .rev-card1 {
     margin: 25px 0 25px 0;
 }
 .hosp-card1-image {
-    margin: 0 0 25px 0;
+    padding: 25px 0 25px 0;
 }
 .hosp-card1-title {
     margin: 0 0 25px 0;
 }
 .ms-card1-image {
-    margin: 25px 0 25px 0;
+    padding: 25px 0 25px 0;
 }
 .ms-card1-title, .ms-card2-title, .ms-card3-title, .ms-card4-title, .ms-card5-title, .ms-card6-title  {
     font-size: 1.5rem;
@@ -77,9 +104,8 @@ p {font-size: 16px;}
 .rev-card1-image {
     margin: 25px 0 0 0;
 }
-.card-2 {
-    margin-top: 50px;
-    padding: 10px;
+.card-image2 {
+    padding: 25px 0 25px 0;
 }
 .rev-card2 {
     margin: 25px 0 25px 0;
@@ -88,27 +114,22 @@ p {font-size: 16px;}
     margin: 0 0 25px 0;
 }
 .hosp-card2-image {
-    margin: 25px 0 25px 0;
+    padding: 25px 0 25px 0;
 }
 .rev-card2-image {
     margin: 25px 0 25px 0;
 }
 .ms-card2-image {
-    margin: 50px 0 50px 0;;
-}
-.ms-card2-text {
-    margin-bottom: 75px;
+    padding: 25px 0 25px 0;
 }
 .ms-card2-title {
-    margin-bottom: 25px;
-} 
+    padding-bottom: 10px;
+}
 .hc2-title {
-    margin-top: 20px;
-    /* margin-bottom: -25px; */
+    padding-bottom: 20px;
 }
 .card-3 {
-    margin-top: 50px;
-    margin-bottom: 75px;
+    margin-top: 20px;
 }
 .card-3 h1 {
     font-size: 1.5rem;
@@ -120,10 +141,13 @@ p {font-size: 16px;}
     font-size: 1rem;
 }
 .hosp-card3-title {
-    margin: 25px 0 25px 0;
+    padding-bottom: 20px;
 }
-.ms-card3-text {
-    margin: 25px 0 25px 0;
+.hosp-card3-image {
+    padding: 25px 0 25px 0;
+}
+.ms-card3-title {
+    padding-bottom: 10px;
 }
 .ms-card3-image {
     margin: 25px 0 25px 0;
@@ -144,13 +168,16 @@ p {font-size: 16px;}
     font-size: 1rem;
 }
 .hosp-card4-image {
-    margin: 50px 0 25px 0;
+    padding: 25px 0 25px 0;
 }
 .hosp-card4-title {
     margin: 0 0 25px 0;
 }
-.ms-card4-text {
-    margin: 0 0 25px 0;
+.ms-card4-image {
+    margin: 25px 0 25px 0;
+}
+.ms-card4-title {
+    padding-bottom: 10px;
 }
 .ms-card4 p {
     font-size: 1rem;
@@ -165,41 +192,30 @@ p {font-size: 16px;}
     font-size: 1rem;
 }
 .hosp-card5-image {
-    margin: 25px 0 50px 0;
+    padding: 25px 0 25px 0;
 }
 .hosp-card5-title {
     margin: 0 0 25px 0;
 }
 .ms-card5-image {
-    margin: 0 0 25px 0;
-} 
-.ms-card5-title {
-    margin: 50px 0 25px 0;
-}
-.ms-card5-text {
-    margin: 50px 0 75px 0;
-}
-.hosp-card6 {
-    margin: 0 0 50px 0;
-}
-.ms-card6-title {
     margin: 25px 0 25px 0;
 }
-.ms-card6-text {
-    margin: 25px 0 75px 0;
+.ms-card5-title {
+    padding-bottom: 5px;
 }
-.ms-card6-image {
-    margin: 25px 0 50px 0;
+.hosp-card6 {
+    padding: 25px 0 25px 0;
 }
 .banner-text {
-    padding: 20px; 
+    padding: 20px;
     background-color:rgba(255,255,255,.5);
 }
 .cursive-text {
     font-family: 'Hamilyn', cursive;
 }
 .jumbotron-medschools {
-    background-image: url('../images/content/books1680x500.jpeg');
+    /* background-image: url('../images/content/books1680x500.jpeg'); */
+    background-image: url('../images/content/books_sm.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -223,8 +239,8 @@ p {font-size: 16px;}
     background-position: center;
 }
 .about-text {
-    border:1px solid #323132; 
-    background-color:#c0bba0; 
+    border:1px solid #323132;
+    background-color:#c0bba0;
     padding:25px;
 }
 .hospital-card-6 {
@@ -288,170 +304,142 @@ p {font-size: 16px;}
 .navbar-light .navbar-toggle .icon-bar {
     background-color: #FFF;
 }
-.site-footer
-{
+.site-footer {
     background-color:#323132;
     padding: 45px 0 20px;
     font-size:15px;
     line-height:24px;
     color:#dacfcf;
 }
-.site-footer hr
-{
+.site-footer hr {
     border-top-color:#bbb;
     opacity:0.5
 }
-.site-footer hr.small
-{
+.site-footer hr.small {
     margin:20px 0
 }
-.site-footer h6
-{
+.site-footer h6 {
     color:#fff;
     font-size:16px;
     text-transform:uppercase;
     margin-top:5px;
     letter-spacing:2px
 }
-.site-footer a
-{
+.site-footer a {
     color:#dacfcf;
 }
 .site-footer a:active,
 .site-footer a:focus,
-.site-footer a:hover
-{
+.site-footer a:hover {
     color:#b4a042;
 }
-.site-footer.inline li
-{
+.site-footer.inline li {
     display:inline-block;
 }
 
-.site-footer a
-{
+.site-footer a {
     color:#dacfcf;
 }
-.site-footer li
-{
+.site-footer li {
     display:block;
 }
-.footer-links
-{
+.footer-links {
     padding-left:0;
     list-style:none;
 }
-.footer-links li
-{
+.footer-links li {
     display:block;
 }
-.footer-links a
-{
+.footer-links a {
     color:#dacfcf;
 }
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
     color:#b4a042;
 }
-.footer-links.inline li
-{
+.footer-links.inline li {
     display:inline-block;
 }
-.copyright-text
-{
+.copyright-text {
     margin:0;
 }
-/* @media (max-width:991px)
-{
-    .site-footer [class^=col-]
-    {
-        margin-bottom:30px;
+
+/*********************************************************************************************PURPLE*/
+/* Small devices (mobile, less than 768*/
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: purple;
     }
 }
-@media (max-width:767px)
-{
-    .site-footer
-    {
-        padding-bottom:0;
-    }
-    .site-footer .copyright-text,.site-footer .social-icons
-    {
-        text-align:center;
-    }
-} */
 
+/*********************************************************************************************PINK*/
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    /* .ms-card1-text{
-        color: red;
-        border: 1px solid red;
-    } */
+    body {
+        background-color: pink;
+    }
     .jumbotron-medschools {
         background-image: url('../images/content/books_sm.jpeg');
         height: 350px;
     }
-    .hc1-title {
+    /* .hc1-title {
         margin: 25px 0 0 0;
         font-size: 1.25rem;
-    }
-    .hc1-text p {
+    } */
+    /* .hc1-text p {
         font-size: .7em;
-    }
-    .card-image2 {
+    } */
+    /* .card-image2 {
         margin: 50px 0 50px 0;
-    }
-    .ms-card3-image {
+    } */
+    /* .ms-card3-image {
         margin: 50px 0 50px 0;
-    }
-    .hc2-title {
+    } */
+    /* .hc2-title {
         margin: 25px 0 15px 0;
         font-size: 1.25rem;
-    }
-    .hc2-text p {
+    } */
+    /* .hc2-text p {
         font-size: .7em;
-    }
+    } */
     .hc3-row1 {
         padding-left: 100px;
     }
     .hc3-row2 {
         padding-right: 100px;
-    } 
-    .hosp-card1-image {
-        margin: 75px 0 75px 0;
     }
-    .ms-card1-image {
+    /* .hosp-card1-image {
+        margin: 75px 0 75px 0;
+    } */
+    /* .ms-card1-image {
         margin: 50px 0 50px 0;
-    }
-    .hosp-card2-image {
+    } */
+    /* .hosp-card2-image {
         margin: 75px 0 75px 0;
-    }
-    .ms-card2-image {
+    } */
+    /* .ms-card2-image {
         margin: 50px 0 50px 0;
-    }
-    .hosp-card3-image {
+    } */
+    /* .hosp-card3-image {
         margin: 75px 0 75px 0;
-    }
-    .ms-card3-image {
+    } */
+    /* .ms-card3-image {
         margin: 50px 0 50px 0;
-    }
-    .hosp-card4-image {
+    } */
+    /* .hosp-card4-image {
         margin: 75px 0 75px 0;
-    }
-    .ms-card4-image {
+    } */
+    /* .ms-card4-image {
         margin: 50px 0 50px 0;
-    }
-    .hosp-card5-image {
+    } */
+    /* .hosp-card5-image {
         margin: 75px 0 75px 0;
-    }
-    .ms-card5-image {
+    } */
+    /* .ms-card5-image {
         margin: 75px 0 75px 0;
-    }
-    .hosp-card6 {
-        margin: 50px 0 75px 0;
     }
     .ms-card6-image {
         margin: 75px 0 75px 0;
-    }
+    } */
     .carousel-caption {
         max-width: 768px;
         text-align:left;
@@ -465,17 +453,17 @@ p {font-size: 16px;}
         font-size: .75em;
     }
     .banner-text {
-        padding: 20px; 
+        padding: 20px;
         margin-right: 25px;
         background-color:rgba(255,255,255,.5);
     }
 }
-
+/*--------------------------------------------------------------------------------------------------------LIGHTBLUE*/
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-    /* .ms-card1-text{
-        color: pink;
-    } */
+@media (min-width: 992px) {
+    body {
+        background-color: lightblue;
+    }
     .jumbotron-medschools {
         background-image: url('../images/content/books1680x500.jpeg');
         height: 600px;
@@ -488,11 +476,9 @@ p {font-size: 16px;}
     }
     .card-2 {
         margin: 25px 0 75px 0px;
-    } 
+    }
     .hc2-title {
-        /* color: pink; */
         margin: 25px 0;
-        /* padding: 0px 0px 0px 175px; */
     }
     .hc2-text {
         padding: 20px 0px 0px 20px;
@@ -513,37 +499,37 @@ p {font-size: 16px;}
     }
     main {
         padding: 20px;
-    }    
+    }
     wrapper {
         display: grid;
         grid-template-columns: .2fr 3fr .05fr .1fr 2fr;
         grid-template-rows: .5fr .5fr 5fr .1fr .2fr;
-    }    
+    }
     section:nth-child(1) {
-        grid-column: 1 / 4; 
-        grid-row: 1 / 5; 
-        z-index: 2; 
+        grid-column: 1 / 4;
+        grid-row: 1 / 5;
+        z-index: 2;
         background-color:#e0dabc;
         border:3px solid #323132;
         padding: 50px 75px 50px 75px;
     }
-    section:nth-child(2) { 
-        grid-column: 2 / 5; 
-        grid-row: 2 / 6; 
+    section:nth-child(2) {
+        grid-column: 2 / 5;
+        grid-row: 2 / 6;
         z-index: 1;
         background-color: #8b7c2c;
     }
-    section:nth-child(3) { 
-        grid-column: 3 / 6; 
-        grid-row: 3 / 4; 
+    section:nth-child(3) {
+        grid-column: 3 / 6;
+        grid-row: 3 / 4;
         z-index: 3;
         background-image: url('../images/content/aboutImg_600x428.jpeg');
-        background-position: center; 
-        background-repeat: no-repeat; 
+        background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
         height: auto;
-    }      
+    }
     section {
         display: flex;
         justify-content: center;
@@ -551,13 +537,17 @@ p {font-size: 16px;}
         font-size: 1.2em;
     }
     .banner-text {
-        padding: 20px; 
+        padding: 20px;
         margin-right: 25px;
         background-color:rgba(255,255,255,.5);
     }
 }
 
+/*--------------------------------------------------------------------------------------------------------LIGHTGREEN*/
 @media (max-width: 1024px) and (max-height: 1366) {
+    body {
+        background-color: lightgreen;
+    }
     .jumbotron-medschools {
         background-image: url('../images/content/books1680x500.jpeg');
         height: 600px;
@@ -603,14 +593,18 @@ p {font-size: 16px;}
         font-size: .75em;
     }
     .banner-text {
-        padding: 20px; 
+        padding: 20px;
         margin-right: 25px;
         background-color:rgba(255,255,255,.5);
     }
 }
 
+/*--------------------------------------------------------------------------------------------------------LIGHTYELLOW*/
 /* Extra large devices (large desktops, 1921px and up) */
 @media (min-width: 1921px) {
+    body {
+        background-color: lightyellow;
+    }
     .jumbotron-medschools {
         background-image: url('../images/content/books1680x500.jpeg');
         height: 700px;
@@ -629,7 +623,7 @@ p {font-size: 16px;}
         padding: 0 0 0 500px;
     }
     .hc2-text {
-        /* padding-right: 250px; */
+        padding-bottom: 20px;
     }
     .ms-card1 p {
         font-size: 2rem;
@@ -788,7 +782,7 @@ p {font-size: 16px;}
         font-size: 1.5em;
     }
     .banner-text {
-        padding: 20px; 
+        padding: 20px;
         margin-right: 25px;
         background-color:rgba(255,255,255,.5);
     }
@@ -808,13 +802,11 @@ p {font-size: 16px;}
     .bg-1 {
         padding: 30px;
     }
-    .site-footer
-    {
+    .site-footer {
         font-size:25px;
         line-height:34px;
     }
-    .site-footer h6
-    {
+    .site-footer h6 {
         font-size:26px;
     }
 }

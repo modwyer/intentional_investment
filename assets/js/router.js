@@ -18,6 +18,9 @@ var ROUTER = (function () {
             '#About': function() {
                 m_pageName = "about";
             },
+            '#About-citations': function() {
+                m_pageName = "about-citations";
+            },
             '#Reviews': function() {
                 m_pageName = "reviews";
             },
@@ -57,8 +60,13 @@ var ROUTER = (function () {
     function render_page() {
         var cards_content = "";
         var banner_content = "";
+        var perform_scrollTo = false;
+        var anchor = "";
 
         switch (m_pageName) {
+            case 'about-citations':     
+                perform_scrollTo = true;
+                anchor = m_pageName.split("-")[1];
             case 'about':
                 banner_content = "";
                 cards_content = ABOUT.get_content();
@@ -70,6 +78,7 @@ var ROUTER = (function () {
             case 'medSchools':
                 banner_content = MEDSCHOOLS.get_banner();
                 cards_content = MEDSCHOOLS.get_cards();
+                MEDSCHOOLS.screen_size_changed();
                 break;
             case 'hospitals':
                 banner_content = HOSPITALS.get_banner();
@@ -82,6 +91,7 @@ var ROUTER = (function () {
             default:
                 banner_content = CAROUSEL.get_carousel();
                 cards_content = HOME.get_cards();
+                HOME.screen_size_changed();
                 break;
         }
         // Scroll to the top of the page
@@ -100,6 +110,10 @@ var ROUTER = (function () {
             } else {
                 $('#' + id + '').removeClass('active');
             }
+        }
+
+        if (perform_scrollTo) {
+            $("html, body").animate({ scrollTop: $('#' + anchor + '').offset().top }, 500);
         }
     }
 

@@ -64,44 +64,46 @@
     <div id="banner"></div>
     <main role="main">
       <div id="cards"></div>
-<!-- Site footer -->
-<footer class="site-footer">
-    <div class="container-fluid">
-        <div class="container-fluid"> 
-            <h6>Quick Links</h6>   
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href="#MedSchools" class="btn btn-outline-light btn-block" role="button">Medical School Programs</a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="#Hospitals" class="btn btn-outline-light btn-block" role="button">Hospital/Residency Programs</a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="#LawSchools" class="btn btn-outline-light btn-block" role="button">Law School/Associate Programs</a>
-                </div>
-            </div>
-        </div>
-      </div>
 
-    <div class="container-fluid">
-        <div class="spacer20"></div>
-        <div class="spacer20"></div>
-        <div class="row">         
-            <div class="col-12">
-                <img src="./assets/images/content/mail.svg" alt="Mail">&nbsp;jen@intentional-investment.com
+        <!-- Site footer -->
+        <footer class="site-footer">
+            <div class="container-fluid">
+                <div class="container-fluid"> 
+                    <h6>Quick Links</h6>   
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="#MedSchools" class="btn btn-outline-light btn-block" role="button">Medical School Programs</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#Hospitals" class="btn btn-outline-light btn-block" role="button">Hospital/Residency Programs</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#LawSchools" class="btn btn-outline-light btn-block" role="button">Law School/Associate Programs</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-                <span>Intentional Investment 2020</span>
-            </div>
-        </div>
-    </div>    
-</footer>
+
+            <div class="container-fluid">
+                <div class="spacer20"></div>
+                <div class="spacer20"></div>
+                <div class="row">         
+                    <div class="col-12">
+                        <img src="./assets/images/content/mail.svg" alt="Mail">&nbsp;jen@intentional-investment.com
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <span>Intentional Investment 2020</span>
+                    </div>
+                </div>
+            </div>    
+        </footer>
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
@@ -118,7 +120,8 @@
     <script>
         $(document).ready(function(){ 
             MAIN.init();
-            $(window).trigger('hashchange');  
+            $(window).trigger('hashchange'); 
+            //var resized = false; 
 
             const page_name = ROUTER.get_current_page();
             $(window).resize(function(){                
@@ -131,7 +134,13 @@
                 if (page_name === "medSchools") {
                     MEDSCHOOLS.screen_size_changed();
                 }
+                if (page_name === "lawSchools") {
+                    LAWSCHOOLS.screen_size_changed();
+                }
+                //resized = true;
             });
+
+            //if (!resized) {
             // On first load...
             switch(page_name) {
                 case "about":
@@ -143,20 +152,13 @@
                 case "medSchools":
                     MEDSCHOOLS.screen_size_changed();
                     break;
+                case "lawSchools": 
+                    LAWSCHOOLS.screen_size_changed();
+                    break;
                 default:
                     break;
-            }
-            // if (page_name === "about") {
-            //     ABOUT.screen_size_changed(); // Call listener function at run time
-            // }
-            // if (page_name === "home") {
-            //     HOME.screen_size_changed();
-            // }
-            // if (page_name === "medSchools") {
-            //     MEDSCHOOLS.screen_size_changed();
-            // }
-            //x.addListener(ABOUT.change_about_content); // Attach listener function on state changes 
-            
+            }    
+            //} 
         });
     </script>
 </body>
